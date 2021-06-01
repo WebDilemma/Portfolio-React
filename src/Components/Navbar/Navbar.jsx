@@ -1,6 +1,7 @@
 import React from 'react';
 import './Navbar.styles.css';
 import Logo from '../../Assets/wd_logo.png';
+import { Link } from 'react-router-dom';
 const Navbar = () => {
   return (
     <nav className="navbar">
@@ -10,7 +11,7 @@ const Navbar = () => {
       </div>
       <ul className="navbar__nav">
         <li>
-          <a href="#home">Home</a>
+          <a href="/">Home</a>
         </li>
         <li>
           <a href="#portfolio">Portfolio</a>
@@ -22,9 +23,9 @@ const Navbar = () => {
           <a href="#about">about</a>
         </li>
       </ul>
-      <button className="navbar__contactBtb">
-        <a href="#contact">Let's talk</a>
-      </button>
+      <div className="navbar__contactBtb">
+        <Link to="/contact">Let's talk</Link>
+      </div>
     </nav>
   );
 };
