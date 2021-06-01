@@ -1,0 +1,14 @@
+.contactView {
+  height: 100vh;
+  position: relative;
+}
+
+.contactView__email {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 2rem;
+  padding: 0 0 2rem 4rem;
+  font-family: 'Fira code';
+  color: #00ffd1;
+}

@@ -1,0 +1,56 @@
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  font-family: 'Fira code';
+}
+
+.contactForm__row {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.contactForm input {
+  margin: 1rem 1rem 2rem 1rem;
+  padding: 1.2rem 2rem;
+  background: transparent;
+  outline: none;
+  border: none;
+  box-shadow: inset -2px -2px 4px rgba(25, 25, 26, 0.5), inset 2px 2px 4px rgba(15, 13, 13, 0.25),
+    inset 5px 5px 10px rgba(15, 13, 13, 0.5), inset -5px -5px 10px #19191a;
+  border-radius: 40px;
+  font-size: 1.6rem;
+  color: #7878ab;
+  font-family: 'Fira code';
+}
+
+.contactForm textarea {
+  background: none;
+  box-shadow: inset -2px -2px 4px rgba(25, 25, 26, 0.5), inset 2px 2px 4px rgba(15, 13, 13, 0.25),
+    inset 5px 5px 10px rgba(15, 13, 13, 0.5), inset -5px -5px 10px #19191a;
+  border-radius: 40px;
+  border: none;
+  outline: none;
+  width: 100%;
+  margin: 0 1rem;
+  padding: 2rem 2rem;
+  font-size: 1.6rem;
+  color: #7878ab;
+  font-family: 'Fira code';
+  height: 250px;
+}
+
+.contactForm__submitBtn {
+  background: #1a1a1a;
+  border: 1px solid #1e1e1e;
+  box-shadow: -4px -4px 12px rgba(49, 49, 49, 0.5), 4px 4px 12px #000000;
+  border-radius: 300px;
+  color: #7878ab;
+  font-size: 1.2rem;
+  padding: 1rem 3rem;
+  font-family: 'Fira code';
+  margin-top: 2rem;
+  cursor: pointer;
+}

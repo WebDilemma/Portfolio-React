@@ -4,7 +4,7 @@ import './Home.styles.css';
 
 const Home = () => {
   return (
-    <section className="home">
+    <section className="home" id="home">
       <Planets className="home__planets" />
       <div className="home__headline">Grow Like Hell</div>
       <div className="home__scroll">

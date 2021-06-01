@@ -1,6 +1,7 @@
 .title {
   font-weight: 500;
   font-size: 2rem;
+  text-transform: capitalize;
   font-family: 'Poppins';
   display: flex;
   align-items: center;

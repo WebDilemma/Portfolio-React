@@ -9,12 +9,22 @@ const Navbar = () => {
         <div className="navbar__circle"></div>
       </div>
       <ul className="navbar__nav">
-        <li>Home</li>
-        <li>Portfolio</li>
-        <li>Templates</li>
-        <li>Contact</li>
+        <li>
+          <a href="#home">Home</a>
+        </li>
+        <li>
+          <a href="#portfolio">Portfolio</a>
+        </li>
+        <li>
+          <a href="#">Templates</a>
+        </li>
+        <li>
+          <a href="#about">about</a>
+        </li>
       </ul>
-      <div className="navbar__contactBtb">Let's talk</div>
+      <button className="navbar__contactBtb">
+        <a href="#contact">Let's talk</a>
+      </button>
     </nav>
   );
 };

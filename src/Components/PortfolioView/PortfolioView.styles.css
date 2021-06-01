@@ -1,4 +1,9 @@
 .portfolioView {
   height: 100vh;
+  position: relative;
   /* background-color: yellow; */
+}
+.portfolioView__items {
+  display: flex;
+  margin: 0 8rem;
 }

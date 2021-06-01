@@ -2,14 +2,18 @@ import React from 'react';
 import './HomePage.styles.css';
 import Home from '../../Components/Home/Home';
 import PortfolioView from '../../Components/PortfolioView/PortfolioView';
-import TemplateView from '../../Components/TemplateView/TemplateView';
+// import TemplateView from '../../Components/TemplateView/TemplateView';
+import AboutView from '../../Components/AboutView/AboutView';
+import ContactView from '../../Components/ContactView/ContactView';
 
 const HomePage = () => {
   return (
     <div className="homepage">
       <Home className="homepage__home" />
       <PortfolioView />
-      <TemplateView />
+      {/* <TemplateView /> */}
+      <AboutView />
+      <ContactView />
     </div>
   );
 };
