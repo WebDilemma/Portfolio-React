@@ -1,0 +1,17 @@
+.title {
+  font-weight: 500;
+  font-size: 2rem;
+  font-family: 'Poppins';
+  display: flex;
+  align-items: center;
+  padding: 9rem 0 4rem 18rem;
+}
+
+.title__line {
+  position: relative;
+  width: 100px;
+  height: 0px;
+  /* top: 20px; */
+  margin: 0 20px;
+  border: 1px solid #ffffff;
+}

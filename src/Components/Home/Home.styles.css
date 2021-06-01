@@ -1,0 +1,31 @@
+.home {
+  position: relative;
+  height: auto;
+}
+
+.home__planets {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.home__headline {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 9rem;
+  font-family: 'Fira Code';
+  font-weight: 700;
+  width: 400px;
+  padding-left: 15vw;
+}
+
+.home__scroll {
+  position: absolute;
+  right: 0;
+  padding-right: 10vw;
+  top: 616px;
+  font-family: 'Fira code';
+  font-weight: 400;
+  font-size: 2rem;
+}

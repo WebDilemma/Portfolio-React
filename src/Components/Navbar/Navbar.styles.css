@@ -1,0 +1,75 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: flex;
+  width: 100%;
+
+  /* justify-content: center; */
+}
+
+.navbar__logo {
+  position: relative;
+  display: flex;
+  top: -100px;
+}
+
+.navbar__logoContainer {
+  position: relative;
+  flex: 0 0 33.33%;
+  justify-content: flex-end;
+  position: relative;
+  display: flex;
+  /* top: 60px; */
+}
+
+.navbar__circle {
+  position: absolute;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  border: 3px solid #3a7bd5;
+  padding: 1.5rem;
+  top: -80px;
+  left: 26vw;
+}
+
+.navbar__logoImg {
+  position: absolute;
+  object-fit: contain;
+  height: 80px;
+  top: 10px;
+}
+
+.navbar__nav {
+  display: flex;
+  /* flex: 0 0 33.33%; */
+  flex: 1;
+  list-style: none;
+  justify-content: center;
+}
+
+.navbar__nav li {
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: 'Roboto';
+  padding: 2.5rem 1rem;
+  text-transform: uppercase;
+}
+
+.navbar__contactBtb {
+  margin: 2rem 16rem 0 4rem;
+  cursor: pointer;
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 1rem;
+  width: 144px;
+  height: 41px;
+  background: #00ff94;
+  border-radius: 92px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
