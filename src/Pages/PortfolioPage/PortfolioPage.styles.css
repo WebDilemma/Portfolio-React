@@ -1,0 +1,26 @@
+.portfolioPage__items {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 8rem;
+  border: 1px white solid;
+  border-radius: 2rem;
+  position: relative;
+  padding: 1rem;
+  transition: all 0.3s ease;
+  justify-content: center;
+}
+
+.items__moreBtn {
+  cursor: pointer;
+  border-radius: 100px;
+  border: 1px solid white;
+  background: #181818;
+  color: white;
+  font-size: 1rem;
+  outline: none;
+  padding: 1rem 2rem;
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+}

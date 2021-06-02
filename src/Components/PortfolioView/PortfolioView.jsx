@@ -3,17 +3,18 @@ import PortfolioCard from '../PortfolioCard/PortfolioCard';
 import ShowMoreBtn from '../ShowMoreBtn/ShowMoreBtn';
 import Title from '../Title/Title';
 import './PortfolioView.styles.css';
+import Data from '../../Data/PortfolioData';
 
 const PortfolioView = () => {
   return (
     <section className="portfolioView" id="portfolio">
       <Title name="Portfolio" />
       <div className="portfolioView__items">
-        <PortfolioCard name="Todo List" thumbnailUrl="https://picsum.photos/600/400" />
-        <PortfolioCard name="E com" thumbnailUrl="https://picsum.photos/500" />
-        <PortfolioCard name="Instagram" thumbnailUrl="https://picsum.photos/1280/720" />
+        {Data.map(
+          (item, index) => index < 3 && <PortfolioCard key={index} name={item.name} thumbnailUrl={item.thumbnailUrl} />
+        )}
       </div>
-      <ShowMoreBtn />
+      <ShowMoreBtn link="/portfolio" />
     </section>
   );
 };

@@ -1,11 +1,17 @@
 .title {
+  width: 100%;
   font-weight: 500;
   font-size: 2rem;
   text-transform: capitalize;
+
+  overflow-x: hidden;
+}
+
+.title p {
+  padding: 9rem 0 4rem 18rem;
   font-family: 'Poppins';
   display: flex;
   align-items: center;
-  padding: 9rem 0 4rem 18rem;
 }
 
 .title__line {

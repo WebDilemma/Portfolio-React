@@ -4,7 +4,10 @@ import './Title.styles.css';
 const Title = ({ name }) => {
   return (
     <div className="title">
-      {name} <span className="title__line"></span>
+      <p>
+        {name}
+        <span className="title__line"></span>
+      </p>
     </div>
   );
 };

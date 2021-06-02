@@ -1,11 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './ShowMoreBtn.styles.css';
 
-const ShowMoreBtn = () => {
+const ShowMoreBtn = ({ link }) => {
   return (
     <div className="more">
       <div className="more__left"></div>
-      <button className="more__button">More</button>
+      <Link to={link}>
+        <button className="more__button">More</button>
+      </Link>
       <div className="more__right"></div>
     </div>
   );

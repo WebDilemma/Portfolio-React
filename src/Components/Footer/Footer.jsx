@@ -4,7 +4,7 @@ import Logo from '../../Assets/wd_logo.png';
 import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
-    <div className="footer">
+    <section className="footer">
       <div className="footer__logo">
         <img className="footer__logoImg" src={Logo} alt="logo" />
       </div>
@@ -20,7 +20,9 @@ const Footer = () => {
             <Link to="/portfolio">Portfolio</Link>
           </li>
           <li>Templates</li>
-          <li>Contact Us</li>
+          <li>
+            <Link to="/contact">Contact</Link>
+          </li>
         </ul>
       </div>
       <div className="footer__socialMedia">
@@ -44,11 +46,11 @@ const Footer = () => {
       </div>
       <div className="footer__address"> L.D College of Engineering, Navarangpura, Ahmedabad- Gujarat.</div>
       <div className="footer__talkBtn">
-        <Link href="/contact">
+        <Link to="/contact">
           <div>Lets talk</div>
         </Link>
       </div>
-    </div>
+    </section>
   );
 };
 

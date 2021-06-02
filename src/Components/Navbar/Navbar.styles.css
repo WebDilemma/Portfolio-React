@@ -5,47 +5,28 @@
   z-index: 100;
   display: flex;
   width: 100%;
-
-  /* justify-content: center; */
-}
-
-.navbar__logo {
-  position: relative;
-  display: flex;
-  top: -100px;
+  justify-content: center;
 }
 
 .navbar__logoContainer {
   position: relative;
   flex: 0 0 33.33%;
-  justify-content: flex-end;
-  position: relative;
+  transform: all 0.3s ease;
+  /* justify-content: flex-end; */
   display: flex;
-  /* top: 60px; */
-}
-
-.navbar__circle {
-  position: absolute;
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  border: 3px solid #3a7bd5;
-  padding: 1.5rem;
-  top: -80px;
-  left: 26vw;
 }
 
 .navbar__logoImg {
   position: absolute;
   object-fit: contain;
-  height: 80px;
-  top: 10px;
+  height: 100px;
+  right: 4px;
 }
 
 .navbar__nav {
   display: flex;
-  /* flex: 0 0 33.33%; */
-  flex: 1;
+  flex: 0 0 33.33%;
+  /* flex: 1; */
   list-style: none;
   justify-content: center;
 }
@@ -59,6 +40,10 @@
 }
 
 .navbar__contactBtb {
+  flex: 0 0 33.33%;
+}
+
+.navbar__contactBtb div {
   margin: 2rem 16rem 0 4rem;
   cursor: pointer;
   font-family: Roboto;
