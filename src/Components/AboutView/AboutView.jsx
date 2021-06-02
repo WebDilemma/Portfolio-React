@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './AboutView.styles.css';
 
 const AboutView = () => {
@@ -42,7 +43,7 @@ const AboutView = () => {
           </div>
         </div>
         <div className="about__seeMore">
-          <a href="">See more</a>
+          <Link to="/about">See More</Link>
         </div>
       </div>
     </section>

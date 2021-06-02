@@ -1,0 +1,112 @@
+#chat .chat__conversation-board__message-container.reversed {
+  flex-direction: row-reverse;
+}
+#chat .chat__conversation-board__message-container.reversed .chat__conversation-board__message__bubble {
+  position: relative;
+}
+#chat
+  .chat__conversation-board__message-container.reversed
+  .chat__conversation-board__message__bubble
+  span:not(:last-child) {
+  margin: 0 0 2em 0;
+}
+#chat .chat__conversation-board__message-container.reversed .chat__conversation-board__message__person {
+  margin: 0 0 0 1.2em;
+}
+#chat .chat__conversation-board__message-container.reversed .chat__conversation-board__message__options {
+  align-self: center;
+  position: absolute;
+  left: 0;
+  display: none;
+}
+#chat .chat__conversation-board__message-container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+#chat .chat__conversation-board__message-container:hover .chat__conversation-board__message__options {
+  display: flex;
+  align-items: center;
+}
+#chat .chat__conversation-board__message-container:hover .option-item:not(:last-child) {
+  margin: 0 0.5em 0 0;
+}
+#chat .chat__conversation-board__message-container:not(:last-child) {
+  margin: 0 0 2em 0;
+}
+#chat .chat__conversation-board__message__person {
+  text-align: center;
+  margin: 0 1.2em 0 0;
+}
+#chat .chat__conversation-board__message__person__avatar {
+  height: 35px;
+  width: 35px;
+  overflow: hidden;
+  border-radius: 50%;
+  user-select: none;
+  ms-user-select: none;
+  position: relative;
+}
+#chat .chat__conversation-board__message__person__avatar::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+#chat .chat__conversation-board__message__person__avatar img {
+  height: 100%;
+  width: auto;
+}
+#chat .chat__conversation-board__message__person__nickname {
+  font-size: 9px;
+  color: #484848;
+  user-select: none;
+  display: none;
+}
+#chat .chat__conversation-board__message__context {
+  max-width: 55%;
+  align-self: flex-end;
+}
+#chat .chat__conversation-board__message__options {
+  align-self: center;
+  position: absolute;
+  right: 0;
+  display: none;
+}
+#chat .chat__conversation-board__message__options .option-item {
+  border: 0;
+  background: 0;
+  padding: 0;
+  margin: 0;
+  height: 16px;
+  width: 16px;
+  outline: none;
+}
+#chat .chat__conversation-board__message__options .emoji-button svg {
+  stroke: var(--chat-options-svg);
+  fill: transparent;
+  width: 100%;
+}
+#chat .chat__conversation-board__message__options .more-button svg {
+  stroke: var(--chat-options-svg);
+  fill: transparent;
+  width: 100%;
+}
+#chat .chat__conversation-board__message__bubble span {
+  width: fit-content;
+  display: inline-table;
+  word-wrap: break-word;
+  background: var(--chat-bubble-background);
+  font-size: 13px;
+  color: var(--chat-text-color);
+  padding: 0.5em 0.8em;
+  line-height: 1.5;
+  border-radius: 6px;
+  font-family: 'Lato', sans-serif;
+}
+#chat .chat__conversation-board__message__bubble:not(:last-child) {
+  margin: 0 0 0.3em;
+}
+#chat .chat__conversation-board__message__bubble:active {
+  background: var(--chat-bubble-active-background);
+}

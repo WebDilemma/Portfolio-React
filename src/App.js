@@ -5,6 +5,7 @@ import HomePage from './Pages/HomePage/HomePage';
 import { Route, Switch } from 'react-router-dom';
 import ContactPage from './Pages/ContactPage/ContactPage';
 import PortfolioPage from './Pages/PortfolioPage/PortfolioPage';
+import AboutPage from './Pages/AboutPage/AboutPage';
 
 function App() {
   return (
@@ -19,6 +20,9 @@ function App() {
         </Route>
         <Route exact path="/portfolio">
           <PortfolioPage />
+        </Route>
+        <Route exact path="/about">
+          <AboutPage />
         </Route>
       </Switch>
     </div>
