@@ -48,8 +48,9 @@
   right: 0;
   top: 0;
   margin: 4.3% 3.2%;
-  background: #333;
+  /* background: #333; */
   overflow-y: scroll;
+  background-image: url(../../Assets/whatsapp_wallpaper.png);
 }
 
 .base {
@@ -121,10 +122,10 @@
 -------------------------------------------------------------- */
 
 .macbook .viewport {
-  transition: background-position 3s ease;
+  /* transition: background-position 3s ease; */
   background-position: 0 0;
   background-size: 100% auto;
-  /* overflow: hidden; */
+  overflow: hidden;
   /* cursor: pointer; */
 }
 

@@ -3,6 +3,7 @@ import './ChatBoard.styles.css';
 import ChatMessage from './ChatMessage';
 import logo from '../../Assets/wd_logo_circle.png';
 import { Link } from 'react-router-dom';
+import wallpaper from '../../Assets/whatsapp_wallpaper.png';
 
 const Chat = () => {
   return (
@@ -34,7 +35,7 @@ const Chat = () => {
           </Link>
         </div>
       </div>
-      <div className="--dark-theme" id="chat">
+      <div id="chat" style={{ backgroundImage: wallpaper }}>
         <div className="chat__conversation-board">
           <ChatMessage message="What is Web Dilemma ?" isReverse />
           <ChatMessage message="Web Dilemma is Group of Web Developers aiming to help businesses go online by building interactive web sites where customers stop by and buy products." />

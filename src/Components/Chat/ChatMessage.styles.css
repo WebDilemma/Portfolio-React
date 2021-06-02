@@ -15,8 +15,17 @@
 }
 
 #chat .chat__conversation-board__message-container.reversed .chat__conversation-board__message__bubble span {
-  background-color: #3494ec;
-  color: #fff;
+  /* background-color: #3494ec;
+  color: #fff; */
+  color: black;
+  background-color: #e2ffc7;
+}
+
+#chat .chat__conversation-board__message-container.reversed .chat__conversation-board__message__bubble span::after {
+  border-width: 0px 0 10px 10px;
+  border-color: transparent transparent transparent #e1ffc7;
+  top: 0;
+  right: -10px;
 }
 
 #chat .chat__conversation-board__message-container {
@@ -33,6 +42,7 @@
   margin: 0 1.2em 0 0;
 }
 #chat .chat__conversation-board__message__person__avatar {
+  display: none;
   height: 35px;
   width: 35px;
   overflow: hidden;
@@ -82,14 +92,23 @@
   display: inline-table;
   word-wrap: break-word;
   /* background: var(--chat-bubble-background); */
-  background: #5c5c5c;
+  /* background: #5c5c5c; */
+  background: #fff;
   font-size: 13px;
   /* color: var(--chat-text-color); */
-  color: #fff;
+  color: black;
   padding: 0.5em 0.8em;
   line-height: 1.5;
   border-radius: 6px;
   font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+}
+
+#chat .chat__conversation-board__message__bubble span::after {
+  border-width: 0px 10px 10px 0;
+  border-color: transparent #fff transparent transparent;
+  top: 0;
+  left: -10px;
 }
 
 #chat .chat__conversation-board__message__bubble:not(:last-child) {
