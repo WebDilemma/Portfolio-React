@@ -10,6 +10,7 @@ import react from '../Assets/TechLogo/react.svg';
 import sass from '../Assets/TechLogo/sass.svg';
 import sql from '../Assets/TechLogo/sql.svg';
 import typescript from '../Assets/TechLogo/typescript.svg';
+import laravel from '../Assets/TechLogo/laravel.svg';
 
 const ExpertInTech = [
   {
@@ -62,6 +63,10 @@ const LearningTech = [
   {
     name: 'typescript',
     logo: typescript,
+  },
+  {
+    name: 'laravel',
+    logo: laravel,
   },
 ];
 
