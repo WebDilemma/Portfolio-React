@@ -7,6 +7,8 @@ import AboutView from '../../Components/AboutView/AboutView';
 import ContactView from '../../Components/ContactView/ContactView';
 
 const HomePage = () => {
+  const value = window.innerWidth;
+  console.log(value);
   return (
     <div className="homepage">
       <Home className="homepage__home" />

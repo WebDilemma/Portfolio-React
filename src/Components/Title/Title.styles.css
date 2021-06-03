@@ -3,7 +3,6 @@
   font-weight: 500;
   font-size: 2rem;
   text-transform: capitalize;
-
   overflow-x: hidden;
 }
 
@@ -12,6 +11,7 @@
   font-family: 'Poppins';
   display: flex;
   align-items: center;
+  opacity: 0.6;
 }
 
 .title__line {
@@ -20,5 +20,36 @@
   height: 0px;
   /* top: 20px; */
   margin: 0 20px;
-  border: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+}
+
+@media (max-width: 1280px) {
+  .title {
+    font-size: 1.33rem;
+  }
+
+  .title p {
+    padding: 6rem 0 2.66rem 12rem;
+  }
+}
+
+@media (max-width: 960px) {
+  .title {
+    font-size: 1rem;
+  }
+
+  .title p {
+    padding: 4rem 0 2rem 9rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .title p {
+    padding: 2.5rem 0 1.3rem 2rem;
+  }
+
+  .title__line {
+    width: 50px;
+    margin: 10px;
+  }
 }

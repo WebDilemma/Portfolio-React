@@ -13,7 +13,8 @@ html {
 
 body {
   color: #fff;
-  background-color: rgba(0, 0, 0, 0.904);
+  /* background-color: rgba(0, 0, 0, 0.904); */
+  background: #19191a;
 }
 
 a {

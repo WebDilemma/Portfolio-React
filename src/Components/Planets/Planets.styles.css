@@ -46,3 +46,61 @@
   border-radius: 50%;
   background: radial-gradient(76.75% 76.75% at 70% 23.25%, #8fe74a 0%, #44e6b5 100%);
 }
+
+@media (max-width: 1280px) {
+  #circle__blue {
+    height: 450px;
+    width: 450px;
+  }
+
+  #circle__green {
+    width: 200px;
+    height: 200px;
+  }
+
+  #circle__pink {
+    width: 186px;
+    height: 186px;
+  }
+
+  #circle__gold {
+    width: 121px;
+    height: 121px;
+  }
+}
+
+@media (max-width: 960px) {
+  #circle__green {
+    display: none;
+  }
+
+  #circle__blue {
+    width: 400px;
+    height: 400px;
+    top: 10%;
+    left: -150px;
+  }
+}
+
+@media (max-width: 650px) {
+  #circle__blue {
+    left: -200px;
+  }
+  #circle__pink {
+    display: none;
+  }
+  #circle__green {
+    display: block;
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    top: -120px;
+    left: 150px;
+  }
+  #circle__gold {
+    width: 240px;
+    height: 240px;
+    right: -100px;
+    bottom: 80px;
+  }
+}

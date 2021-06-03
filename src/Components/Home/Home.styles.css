@@ -1,6 +1,6 @@
 .home {
   position: relative;
-  height: auto;
+  height: 100vh;
 }
 
 .home__planets {
@@ -28,4 +28,63 @@
   font-family: 'Fira code';
   font-weight: 400;
   font-size: 2rem;
+}
+
+.home__scroll__icon {
+  display: none;
+}
+
+@media (max-width: 1280px) {
+  .home__headline {
+    font-size: 6rem;
+  }
+  .home__scroll {
+    top: 410px;
+    font-size: 1.3rem;
+    padding-right: 15vw;
+  }
+}
+
+@media (max-width: 650px) {
+  .home__headline {
+    font-size: 5rem;
+    width: 100px;
+  }
+  .home__scroll {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home__scroll p:first-of-type {
+    padding-bottom: 1em;
+  }
+
+  .home__scroll .fa-chevron-down {
+    animation: bounce 2s infinite;
+    padding-top: 1rem;
+  }
+
+  .home__scroll img {
+    display: none;
+  }
+  .home__scroll__icon {
+    display: block;
+  }
+  @keyframes bounce {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-40px);
+    }
+  }
 }

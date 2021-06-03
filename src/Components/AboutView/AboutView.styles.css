@@ -1,5 +1,5 @@
 .about {
-  height: 100vh;
+  /* min-height: 100vh; */
   color: white;
   z-index: 0;
   position: relative;
@@ -49,7 +49,7 @@
 
 .info__headline {
   font-family: Roboto;
-  font-weight: 300;
+  font-weight: 500;
   font-size: 2.5rem;
   line-height: 42px;
   margin-bottom: 2rem;
@@ -74,29 +74,27 @@
   justify-content: center;
 }
 
+.about__infoImg__container {
+  position: relative;
+  margin: 1rem;
+}
+
+.about__infoImg__container img {
+  object-fit: contain;
+  width: 600px;
+}
+
 .about__infoImg--bg {
-  position: absolute;
-  bottom: -20px;
-  right: -20px;
   z-index: -1;
   opacity: 0.2;
-}
-
-.about__infoImg--bg:last-child {
-  bottom: -20px;
-  left: -20px;
-}
-
-.about__infoImg {
-  position: relative;
+  position: absolute;
+  bottom: -10px;
+  right: -10px;
+  backdrop-filter: blur(42px);
 }
 
 /* =============== 1440px display ============================= */
-@media (max-width: 1440px) {
-  .about__infoImg > img {
-    object-fit: contain;
-    height: 250px;
-  }
+@media (max-width: 1280px) {
   .info__title {
     font-size: 1rem;
     margin-bottom: 1rem;
@@ -108,5 +106,85 @@
   .info__description {
     font-size: 0.8rem;
     line-height: 1.2rem;
+  }
+  .about__infoImg__container img {
+    object-fit: contain;
+    width: 400px;
+  }
+  .about__infoImg--bg {
+    bottom: -10px;
+    right: -10px;
+  }
+}
+
+@media (max-width: 960px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+  }
+  .about__infoImg__container img {
+    object-fit: contain;
+    width: 100%;
+    /* height: 100%; */
+  }
+  .about__row:last-child {
+    display: none;
+  }
+  .about__container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about__infoContainer {
+    flex: 0 0 100%;
+    max-width: 100%;
+    justify-content: center;
+    padding-top: 0;
+  }
+  .info__title {
+    display: none;
+  }
+  .about__row {
+    flex-direction: column-reverse;
+  }
+  .about__seeMore {
+    flex: 0 0 100%;
+  }
+
+  .about__infoImg {
+    display: flex;
+    justify-content: center;
+  }
+  .about__infoImg--main,
+  .about__infoImg--bg {
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+  }
+  .about__infoText {
+    margin: 0;
+  }
+  .about__seeMore {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .about__container {
+    margin: 0 2rem;
+  }
+  .about__infoContainer {
+    padding: 0;
+  }
+
+  .info__headline {
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+  }
+  .info__description {
+    font-size: 0.8rem;
+    font-weight: 200;
+    line-height: 1rem;
   }
 }

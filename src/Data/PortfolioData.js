@@ -5,15 +5,15 @@ const Data = [
   },
   {
     name: 'Todo app',
-    thumbnailUrl: 'https://picsum.photos/1280/400',
+    thumbnailUrl: 'https://picsum.photos/1280/720',
   },
   {
     name: 'Chrome extension',
-    thumbnailUrl: 'https://picsum.photos/1280/400',
+    thumbnailUrl: 'https://picsum.photos/1280/720',
   },
   {
     name: 'Netflix clone',
-    thumbnailUrl: 'https://picsum.photos/1280/400',
+    thumbnailUrl: 'https://picsum.photos/1280/720',
   },
   {
     name: 'Amazon Clone',

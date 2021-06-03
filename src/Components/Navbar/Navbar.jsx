@@ -20,7 +20,7 @@ const Navbar = () => {
         <img ref={imgRef} id="logoImg" className="navbar__logoImg" src={Logo} alt="logo" />
       </div>
       <div className="navbar__burgerBtn" onClick={() => setShowNav(!showNav)}>
-        <i class={showNav ? 'fas fa-times' : 'fas fa-bars'}></i>
+        <i className={showNav ? 'fas fa-times' : 'fas fa-bars'}></i>
       </div>
 
       <ul className={showNav ? 'navbar__nav active' : 'navbar__nav'}>

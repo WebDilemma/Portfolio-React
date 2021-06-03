@@ -1,10 +1,18 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import Title from '../Title/Title';
 import './AboutView.styles.css';
 
 const AboutView = () => {
+  const [width, setWidth] = useState();
+  useEffect(() => {
+    let value = window.innerWidth;
+    setWidth(value);
+  });
+
   return (
     <section className="about" id="about">
+      {width <= 960 && <Title name="about" />}
       <div className="about__container">
         <div className="about__infoContainer">
           <div className="about__row">
@@ -21,14 +29,18 @@ const AboutView = () => {
               </p>
             </div>
             <div className="about__infoImg">
-              <img src="https://picsum.photos/600/400" alt="main" />
-              <img className="about__infoImg--bg" src="https://picsum.photos/600/400" alt="" />
+              <div className="about__infoImg__container">
+                <img className="about__infoImg--main" src="https://picsum.photos/600/400" alt="main" />
+                <img className="about__infoImg--bg" src="https://picsum.photos/600/400" alt="" />
+              </div>
             </div>
           </div>
           <div className="about__row">
             <div className="about__infoImg">
-              <img src="https://picsum.photos/600/400" alt="" />
-              <img className="about__infoImg--bg" src="https://picsum.photos/600/400" alt="" />
+              <div className="about__infoImg__container">
+                <img className="about__infoImg--main" src="https://picsum.photos/600/400" alt="main" />
+                <img className="about__infoImg--bg" src="https://picsum.photos/600/400" alt="" />
+              </div>
             </div>
             <div className="about__infoText">
               <p className="info__title">- About</p>

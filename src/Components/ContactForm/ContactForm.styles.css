@@ -4,6 +4,7 @@
   align-items: center;
   width: 100%;
   font-family: 'Fira code';
+  padding: 0 0 6rem;
 }
 
 .contactForm__row {
@@ -17,10 +18,11 @@
   padding: 1.2rem 2rem;
   background: transparent;
   outline: none;
+  width: 100%;
   border: none;
   box-shadow: inset -2px -2px 4px rgba(25, 25, 26, 0.5), inset 2px 2px 4px rgba(15, 13, 13, 0.25),
     inset 5px 5px 10px rgba(15, 13, 13, 0.5), inset -5px -5px 10px #19191a;
-  border-radius: 40px;
+  border-radius: 2rem;
   font-size: 1.6rem;
   color: #7878ab;
   font-family: 'Fira code';
@@ -30,7 +32,7 @@
   background: none;
   box-shadow: inset -2px -2px 4px rgba(25, 25, 26, 0.5), inset 2px 2px 4px rgba(15, 13, 13, 0.25),
     inset 5px 5px 10px rgba(15, 13, 13, 0.5), inset -5px -5px 10px #19191a;
-  border-radius: 40px;
+  border-radius: 2rem;
   border: none;
   outline: none;
   width: 100%;
@@ -43,14 +45,54 @@
 }
 
 .contactForm__submitBtn {
-  background: #1a1a1a;
-  border: 1px solid #1e1e1e;
-  box-shadow: -4px -4px 12px rgba(49, 49, 49, 0.5), 4px 4px 12px #000000;
+  border: transparent;
+  background: linear-gradient(145deg, #1c1c1c, #171717);
+  box-shadow: 4px 4px 12px #0a0a0a, -4px -4px 12px #2a2a2a;
   border-radius: 300px;
   color: #7878ab;
   font-size: 1.2rem;
   padding: 1rem 3rem;
   font-family: 'Fira code';
+  font-weight: 700;
   margin-top: 2rem;
   cursor: pointer;
+  outline: none;
+}
+
+.contactForm__submitBtn:hover {
+}
+
+.contactForm__submitBtn:focus {
+  background: linear-gradient(145deg, #171717, #1c1c1c);
+  box-shadow: 4px 4px 12px #0a0a0a, -4px -4px 12px #2a2a2a;
+}
+
+@media (max-width: 1280px) {
+  .contactForm input {
+    margin: 0.6rem 0.6rem 1.2rem 0.6rem;
+    padding: 0.8rem 1.2rem;
+    font-size: 1rem;
+  }
+
+  .contactForm textarea {
+    margin: 0 0.6rem;
+    padding: 1.2rem 1.2rem;
+    font-size: 1rem;
+    height: 160px;
+  }
+  .contactForm__submitBtn {
+    font-size: 1rem;
+    padding: 0.6rem 2rem;
+    box-shadow: -3px -3px 9px rgba(49, 49, 49, 0.5), 3px 3px 9px #000000;
+  }
+}
+
+@media (max-width: 650px) {
+  .contactForm form {
+    /* width: 90%/; */
+  }
+  .contactForm__row {
+    flex-direction: column;
+    align-items: center;
+  }
 }
