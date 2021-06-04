@@ -1,18 +1,51 @@
 .techCard {
   flex: 0 0 25%;
+  max-width: 25%;
+  /* background-color: brown; */
 }
 
 .techCard__container {
-  padding: 1rem;
+  /* padding: 1rem; */
+  margin: 1rem;
+  /* width: 80%; */
+  /* background-color: blue; */
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
+.techCard__logo {
+  object-fit: contain;
+  height: 100px;
+}
+
 .techCard__container p {
   padding-top: 0.5rem;
   font-size: 1.5rem;
   font-family: 'Fira code';
-  /* text-transform: uppercase; */
+}
+
+@media (max-width: 1280px) {
+  .techCard__container {
+    margin: 0.66rem;
+  }
+  .techCard__logo {
+    height: 66px;
+  }
+  .techCard__container p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 960px) {
+  .techCard__container {
+    margin: 0.5rem;
+  }
+  .techCard__logo {
+    height: 50px;
+  }
+  .techCard__container p {
+    font-size: 0.6rem;
+  }
 }

@@ -5,7 +5,7 @@ const TechCard = ({ logo, name }) => {
   return (
     <div className="techCard">
       <div className="techCard__container">
-        <img src={logo} alt={name} />
+        <img className="techCard__logo" src={logo} alt={name} />
         <p>{name}</p>
       </div>
     </div>
