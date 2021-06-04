@@ -9,7 +9,7 @@
 .macbook {
   padding: 4% 6%;
   margin: 0 auto;
-  max-width: 1000px;
+  width: 1000px;
 }
 
 .screen {
@@ -142,3 +142,10 @@
   right: 0;
   top: 0;
 } */
+
+@media (max-width: 960px) {
+  .screen::before,
+  .screen:after {
+    display: none;
+  }
+}

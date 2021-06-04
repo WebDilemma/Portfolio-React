@@ -1,0 +1,19 @@
+.ourTeam__members {
+  display: flex;
+  flex: 1;
+  /* align-items: center; */
+  flex-wrap: wrap;
+  margin: 0 8rem;
+}
+
+@media (max-width: 960px) {
+  .ourTeam__members {
+    margin: 0 4rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .ourTeam__members {
+    margin: 0 2rem;
+  }
+}

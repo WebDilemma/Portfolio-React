@@ -44,6 +44,7 @@
   display: flex;
   border-bottom: 1px solid #fff;
   background: #075b52;
+  width: 100%;
 }
 
 .chat__header__container {
@@ -138,13 +139,10 @@
   display: none;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
   #chat {
     margin: 0;
     border-radius: 0;
-  }
-  #chat .chat__conversation-board {
-    height: calc(100vh - 55px - 2em - 0.5em - 3em);
   }
   #chat .chat__conversation-board__message__options {
     display: none !important;

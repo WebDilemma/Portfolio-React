@@ -1,8 +1,5 @@
 .iPhone {
   position: absolute;
-  /*   top: calc(50% - 408px); */
-  /* right: 2rem; */
-  /*   display: none; */
   height: 704px;
   width: 396px;
   padding: 90px 10px;
@@ -46,4 +43,11 @@
 .icon i {
   font-style: normal;
   position: absolute;
+}
+
+@media (max-width: 650px) {
+  .iPhone {
+    height: 400px;
+    width: 268.125px;
+  }
 }

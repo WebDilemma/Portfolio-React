@@ -1,0 +1,99 @@
+.teamMemberCard {
+  flex: 0 0 33.3333%;
+  max-width: 33.33333%;
+  display: flex;
+  justify-content: center;
+  font-family: 'Fira code';
+}
+.teamMemberCard__container {
+  padding: 1rem;
+  margin: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(42px);
+  border-radius: 1rem;
+  width: 80%;
+  display: flex;
+}
+
+.teamMemberCard__imgContainer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.teamMemberCard__profileImg {
+  object-fit: contain;
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.teamMemberCard__socialLinks {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: flex-start;
+}
+
+.teamMemberCard__socialLinks .fa {
+  font-size: 3rem;
+  padding: 0 0 1rem 1rem;
+  opacity: 0.4;
+}
+
+.teamMemberCard__socialLinks .fa:hover {
+  opacity: 1;
+}
+
+.teamMemberCard__name {
+  margin-top: 0.6rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.teamMemberCard__jobTitle {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.teamMemberCard__container .teamMemberCard__col:last-child {
+  display: flex;
+}
+
+@media (max-width: 1280px) {
+  .teamMemberCard__name {
+    font-size: 1.2rem;
+    margin-top: 0.4rem;
+  }
+  .teamMemberCard__jobTitle {
+    font-size: 0.8rem;
+  }
+  .teamMemberCard__socialLinks .fa {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 960px) {
+  .teamMemberCard {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 650px) {
+  .teamMemberCard {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .teamMemberCard__container {
+    flex-direction: column;
+  }
+  .teamMemberCard__socialLinks {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .teamMemberCard__socialLinks .fa {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    padding-bottom: 0;
+  }
+}

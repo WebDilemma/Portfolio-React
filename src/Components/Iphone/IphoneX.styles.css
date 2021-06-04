@@ -1,0 +1,35 @@
+.mobile {
+  display: inline-block;
+  font-size: 0;
+  margin: 15px;
+  min-height: 400px;
+  background-color: #000;
+  border: 50px solid #000;
+  border-width: 70px 7px 30px 7px;
+  border-radius: 15px;
+  box-shadow: 1px 1px 0 #353535, 2px 2px 0 #353535, 3px 3px 0 #353535, 4px 4px 0 #353535, 5px 5px 0 #353535,
+    10px 10px 5px rgba(0, 0, 0, 0.4);
+  position: relative;
+  width: 280px;
+  height: 450px;
+}
+
+.mobile::before {
+  content: '';
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #353535;
+  height: 6px;
+  width: 20%;
+  border-radius: 3px;
+}
+
+/* .mobile img {
+  max-width: 100%;
+} */
+.width {
+  width: 240px;
+  height: 400px;
+}

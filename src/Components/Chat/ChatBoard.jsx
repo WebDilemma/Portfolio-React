@@ -7,7 +7,7 @@ import wallpaper from '../../Assets/whatsapp_wallpaper.png';
 
 const Chat = () => {
   return (
-    <>
+    <div className="chat">
       <div className="chat__header">
         <div className="chat__header__logo">
           <img className="chat__header__logoImg" src={logo} alt="logo" />
@@ -47,9 +47,10 @@ const Chat = () => {
             message="Sounds Good. I sure want my site to be engaging to generate more and more leads from it!."
             isReverse
           />
+          <ChatMessage message="We got you!" />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
