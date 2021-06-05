@@ -1,15 +1,19 @@
 .navbar {
   position: fixed;
   top: 0;
-  left: 0;
   z-index: 100;
   display: flex;
   width: 100%;
-  justify-content: space-around;
+  transition: all ease;
+  justify-content: center;
+  /* transform: translateX(5%); */
+  /* background: #19191a; */
+  z-index: 1;
+  background-image: linear-gradient(#19191a, transparent);
 }
 
 .navbar__logoContainer {
-  position: relative;
+  transform: translateX(50px);
   transform: all 0.3s ease;
   z-index: 2;
 }
@@ -22,22 +26,26 @@
 .navbar__nav {
   display: flex;
   flex: 0 0 33.33%;
-  /* flex: 1; */
   list-style: none;
   justify-content: center;
+  align-items: center;
 }
 
 .navbar__nav li {
   font-size: 1rem;
   font-weight: 500;
   font-family: 'Roboto';
-  padding: 2.5rem 1rem;
+  padding: 0 1rem;
+  /* text-align: center; */
   text-transform: uppercase;
 }
 
+.navbar__contactBtb {
+  display: flex;
+  align-items: center;
+}
+
 .navbar__contactBtb > div {
-  /* margin: 2rem 16rem 0 4rem; */
-  margin-top: 2rem;
   cursor: pointer;
   font-family: Roboto;
   font-weight: 700;
@@ -58,33 +66,51 @@
   z-index: 2;
 }
 
+@media (max-width: 1280px) {
+  .navbar__logoImg {
+    height: 80px;
+  }
+  .navbar__nav li {
+    padding: 1.6rem 0.6rem;
+    font-size: 0.8rem;
+  }
+  .navbar__contactBtb > div {
+    width: 93px;
+    height: 26px;
+    font-size: 0.8rem;
+  }
+}
+
 @media (max-width: 960px) {
   .navbar {
     display: flex;
     justify-content: flex-end;
     margin-right: 5rem;
     position: relative;
+    left: -50px;
   }
   .navbar__logoContainer {
-    position: absolute;
-    left: -70px;
+    position: fixed;
+    left: -120px;
     top: 0;
   }
 
   .navbar__nav {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 100vw;
     height: 500px;
     position: absolute;
     transition: all 0.3s ease;
     top: -500px;
+    /* right: 0; */
     z-index: -1;
     text-align: center;
   }
 
   .navbar__nav li {
     padding: 2rem 1rem;
+    width: 100%;
   }
 
   .navbar__nav.active li:hover {
@@ -93,6 +119,7 @@
   }
 
   .navbar__nav.active {
+    left: 50px;
     background: linear-gradient(152.97deg, rgba(255, 255, 255, 0.2) 0%, rgba(21, 21, 21, 0) 100%);
     backdrop-filter: blur(42px);
     top: 0;
@@ -101,12 +128,28 @@
 
   .navbar__burgerBtn {
     display: block;
-    position: absolute;
+    position: fixed;
+    transition: all 0.3s ease;
     top: 0;
     right: 0;
-    transform: translate(-100%, 60%);
+    margin: 30px;
+    /* transform: translate(0, 60%); */
     font-size: 1.8rem;
     cursor: pointer;
+  }
+
+  .navbar__burgerBtn .fa {
+    animation: shrink 1s linear;
+  }
+
+  @keyframes shrink {
+    0%,
+    100% {
+      width: 100%;
+    }
+    50% {
+      width: 0;
+    }
   }
 
   .navbar__contactBtb {

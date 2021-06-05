@@ -4,20 +4,24 @@ import Logo from '../../Assets/wd_logo_nav.png';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
-  const imgRef = useRef();
+  const navRef = useRef();
   const [showNav, setShowNav] = useState(false);
-  // useEffect(() => {
-  //   window.addEventListener('scroll', function () {
-  //     const navbarLogo = imgRef;
-  //     let value = window.scrollY;
-  //     navbarLogo.current.style.right = `${value * 0.06}px`;
-  //   });
-  // });
+  const navScroll = () => {
+    const navbar = navRef;
+    let value = window.scrollY;
+    if (window.innerWidth < 960) return;
+    navbar.current.style.transform = `translateX(${value * -0.01}px)`;
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', navScroll);
+    return () => window.removeEventListener('scroll', navScroll);
+  });
 
   return (
-    <nav className="navbar">
+    <nav ref={navRef} className="navbar">
       <div className="navbar__logoContainer">
-        <img ref={imgRef} id="logoImg" className="navbar__logoImg" src={Logo} alt="logo" />
+        <img id="logoImg" className="navbar__logoImg" src={Logo} alt="logo" />
       </div>
       <div className="navbar__burgerBtn" onClick={() => setShowNav(!showNav)}>
         <i className={showNav ? 'fas fa-times' : 'fas fa-bars'}></i>
