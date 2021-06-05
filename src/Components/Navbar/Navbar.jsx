@@ -18,28 +18,33 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', navScroll);
   });
 
+  const handleNavbar = () => {
+    setShowNav(!showNav);
+  };
+
   return (
     <nav ref={navRef} className="navbar">
       <div className="navbar__logoContainer">
         <img id="logoImg" className="navbar__logoImg" src={Logo} alt="logo" />
       </div>
-      <div className="navbar__burgerBtn" onClick={() => setShowNav(!showNav)}>
+      <div className="navbar__burgerBtn" onClick={handleNavbar}>
         <i className={showNav ? 'fas fa-times' : 'fas fa-bars'}></i>
       </div>
 
       <ul className={showNav ? 'navbar__nav active' : 'navbar__nav'}>
-        <li>
-          <a href="/">Home</a>
-        </li>
-        <li>
-          <a href="#portfolio">Portfolio</a>
-        </li>
-        <li>
-          <a href="#">Templates</a>
-        </li>
-        <li>
-          <a href="#about">about</a>
-        </li>
+        <Link to="/" onClick={handleNavbar}>
+          <li>Home</li>
+        </Link>
+        <Link to="/portfolio" onClick={handleNavbar}>
+          <li>Portfolio</li>
+        </Link>
+
+        <Link to="/services" onClick={handleNavbar}>
+          <li>Services</li>
+        </Link>
+        <Link to="/contact" onClick={handleNavbar}>
+          <li>Contact</li>
+        </Link>
       </ul>
       <div className="navbar__contactBtb">
         <div>

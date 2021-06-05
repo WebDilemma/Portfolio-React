@@ -8,7 +8,7 @@
   justify-content: center;
   /* transform: translateX(5%); */
   /* background: #19191a; */
-  z-index: 1;
+  z-index: 10;
   background-image: linear-gradient(#19191a, transparent);
 }
 
@@ -87,7 +87,7 @@
     justify-content: flex-end;
     margin-right: 5rem;
     position: relative;
-    left: -50px;
+    /* transform: translateX(-50px); */
   }
   .navbar__logoContainer {
     position: fixed;
@@ -98,7 +98,7 @@
   .navbar__nav {
     display: flex;
     flex-direction: column;
-    width: 100vw;
+    width: 100%;
     height: 500px;
     position: absolute;
     transition: all 0.3s ease;
@@ -106,11 +106,12 @@
     /* right: 0; */
     z-index: -1;
     text-align: center;
+    overflow-x: hidden;
   }
 
   .navbar__nav li {
     padding: 2rem 1rem;
-    width: 100%;
+    width: 100vw;
   }
 
   .navbar__nav.active li:hover {
@@ -119,7 +120,7 @@
   }
 
   .navbar__nav.active {
-    left: 50px;
+    /* left: 50px; */
     background: linear-gradient(152.97deg, rgba(255, 255, 255, 0.2) 0%, rgba(21, 21, 21, 0) 100%);
     backdrop-filter: blur(42px);
     top: 0;
