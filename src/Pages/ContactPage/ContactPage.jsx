@@ -15,7 +15,7 @@ const ContactPage = () => {
         <Title name="reach out" />
         <div className="contactpage__reachOut">
           <div className="reachOut__map">
-            <img src="https://picsum.photos/800/600" alt="map" />
+            <img className="reachOut__mapImg" src="https://picsum.photos/800/600" alt="map" />
           </div>
           <div className="reachOut__info">
             <div className="reachOut__infoContainer">

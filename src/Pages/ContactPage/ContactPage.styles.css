@@ -5,11 +5,21 @@
 .contactpage__reachOut {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin: auto;
 }
 
 .reachOut__map {
-  margin: 2rem;
+  padding: 0 2rem;
+  /* width: 80%; */
+  display: flex;
+  justify-content: center;
+}
+
+.reachOut__mapImg {
+  object-fit: contain;
+  height: 100%;
+  width: 800px;
 }
 
 .reachOut__info {
@@ -31,4 +41,39 @@
 .reachOut__infoContainer h3 {
   font-size: 3rem;
   margin-bottom: 0.5rem;
+}
+
+@media (max-width: 1280px) {
+  .reachOut__mapImg {
+    width: 500px;
+  }
+  .reachOut__infoContainer {
+    margin-bottom: 0.6rem;
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+  .reachOut__infoContainer h3 {
+    font-size: 2rem;
+    margin-bottom: 0.3rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .reachOut__mapImg {
+    width: 280px;
+  }
+  .reachOut__map {
+    padding: 0;
+  }
+  .contactpage__reachOut {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .reachOut__infoContainer {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .reachOut__infoContainer h3 {
+    font-size: 1.3rem;
+  }
 }
