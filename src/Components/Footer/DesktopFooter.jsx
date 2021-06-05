@@ -46,7 +46,7 @@ const DesktopFooter = () => {
         </ul>
       </div>
       <div className="footer__address">
-        <i class="fa fa-map-marker" style={{ color: 'red' }} aria-hidden="true"></i> L.D College of Engineering,
+        <i className="fa fa-map-marker" style={{ color: 'red' }} aria-hidden="true"></i> L.D College of Engineering,
         Navarangpura, Ahmedabad- Gujarat.
       </div>
       <div className="footer__talkBtn">

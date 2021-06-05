@@ -9,14 +9,14 @@ const TechSkills = () => {
     <section className="skills">
       <Title name="Skills" />
       <div className="skills__container">
-        {ExpertInTech.map((item, index) => (
-          <TechCard name={item.name} logo={item.logo} />
+        {ExpertInTech.map((item) => (
+          <TechCard key={item.name} name={item.name} logo={item.logo} />
         ))}
       </div>
       <p className="skills__subHead">Learning:</p>
       <div className="skills__container">
-        {LearningTech.map((item, index) => (
-          <TechCard name={item.name} logo={item.logo} />
+        {LearningTech.map((item) => (
+          <TechCard key={item.name} name={item.name} logo={item.logo} />
         ))}
       </div>
     </section>

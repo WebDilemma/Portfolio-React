@@ -11,6 +11,7 @@ const OurTeam = () => {
       <div className="ourTeam__members">
         {TeamMembers.map((member, index) => (
           <TeamMemberCard
+            key={index}
             name={member.name}
             profilePic={member.profilePic}
             jobTitle={member.jobTitle}

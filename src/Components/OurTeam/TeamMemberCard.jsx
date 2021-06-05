@@ -16,11 +16,11 @@ const TeamMemberCard = ({ name, jobTitle, profilePic, expertise, twitterLink, gi
         </div>
         <div className="teamMemberCard__col">
           <div className="teamMemberCard__socialLinks">
-            <i class="fa fa-github" aria-hidden="true"></i>
-            <i class="fa fa-twitter" aria-hidden="true"></i>
-            <i class="fa fa-instagram" aria-hidden="true"></i>
-            <i class="fa fa-linkedin" aria-hidden="true"></i>
-            <i class="fa fa-globe" aria-hidden="true"></i>
+            <i className="fa fa-github" aria-hidden="true"></i>
+            <i className="fa fa-twitter" aria-hidden="true"></i>
+            <i className="fa fa-instagram" aria-hidden="true"></i>
+            <i className="fa fa-linkedin" aria-hidden="true"></i>
+            <i className="fa fa-globe" aria-hidden="true"></i>
           </div>
         </div>
       </div>
