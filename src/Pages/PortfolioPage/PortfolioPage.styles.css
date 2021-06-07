@@ -20,30 +20,30 @@ height: 100vh;
   display: flex;
   flex-wrap: nowrap;
   overflow-x: scroll;
-  min-height: 50vh;
   margin: 0 8rem;
-  /* border: 1px white solid; */
+  flex: 1;
   border-radius: 2rem;
   position: relative;
   padding: 1rem;
   transition: all 0.3s ease;
   scroll-snap-type: x mandatory;
-  /* justify-content: center; */
+  justify-content: center;
 }
 
 .items__moreBtn {
 
   text-transform: capitalize;
   cursor: pointer;
-  border-radius: 100px;
-  border: 1px solid white;
+  /* border-radius: 100px;
+  border: 1px solid white; */
   background: #181818;
   color: white;
   font-size: 1rem;
   outline: none;
   padding: 1rem 2rem;
+  font-family: "roboto";
     position: absolute; 
-  bottom: 5%; 
+  /* bottom: 5%;  */
   left: 50%; 
   transform: translateX(-50%);
   z-index: 2;
@@ -62,7 +62,6 @@ height: 100vh;
     padding: 0;
     border: none;
     flex-wrap: nowrap;
-    overflow-x: scroll;
   }
   .items__moreBtn {
     /* display: none; */
@@ -74,6 +73,6 @@ height: 100vh;
     margin: 0 2.7rem;
     padding: 0;
   }
-  .items__moreBtn {
+  .portfolioPage {
   }
 }

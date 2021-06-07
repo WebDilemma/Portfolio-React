@@ -1,4 +1,25 @@
+html, body {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.aboutpage {
+ 
+  overflow-y: scroll;
+   scroll-snap-type: y mandatory;
+   height: 100vh;
+}
+.aboutpage__device {
+  scroll-snap-align: start;
+  height: auto;
+}
 .aboutpage__deviceContainer {
+  scroll-snap-align: start;
+ 
   display: flex;
   justify-content: center;
+}
+
+@media (max-width: 650px) {
+  
 }

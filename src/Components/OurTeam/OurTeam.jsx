@@ -6,7 +6,7 @@ import TeamMembers from '../../Data/TeamMembers';
 
 const OurTeam = () => {
   return (
-    <div className="ourTeam">
+    <section className="ourTeam">
       <Title name="Our Team" />
       <div className="ourTeam__members">
         {TeamMembers.map((member, index) => (
@@ -24,7 +24,7 @@ const OurTeam = () => {
           />
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

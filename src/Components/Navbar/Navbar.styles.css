@@ -32,6 +32,7 @@
   font-size: 1rem;
   font-weight: 500;
   font-family: 'Roboto';
+  
   padding: 0 1rem;
   /* text-align: center; */
   text-transform: uppercase;
@@ -63,6 +64,10 @@
   z-index: 2;
 }
 
+.navbar__specialCase {
+  display: none;
+}
+
 @media (max-width: 1280px) {
   .navbar__logoImg {
     height: 80px;
@@ -79,6 +84,14 @@
 }
 
 @media (max-width: 960px) {
+  .navbar__specialCase {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+background: rgba(255, 255, 255, 0.24);
+color: black;
+  }
   .navbar {
     display: flex;
     justify-content: flex-end;
@@ -96,10 +109,10 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 500px;
+    height: 400px;
     position: absolute;
     transition: all 0.3s ease;
-    top: -500px;
+    top: -400px;
     /* right: 0; */
     z-index: -1;
     text-align: center;
@@ -107,17 +120,20 @@
   }
 
   .navbar__nav li {
-    padding: 2rem 1rem;
+    padding: 1.5rem 0rem;
     width: 100vw;
+    font-weight: 500;
   }
 
   .navbar__nav.active li:hover {
     transition: cubic-bezier(1, 0, 0, 1);
     background: rgba(255, 255, 255, 0.24);
+    color: black;
   }
 
   .navbar__nav.active {
     /* left: 50px; */
+    background-blend-mode: hue;
     background: linear-gradient(152.97deg, rgba(255, 255, 255, 0.2) 0%, rgba(21, 21, 21, 0) 100%);
     backdrop-filter: blur(42px);
     top: 0;

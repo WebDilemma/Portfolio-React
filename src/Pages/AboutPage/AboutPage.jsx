@@ -21,8 +21,11 @@ const AboutPage = () => {
 
   return (
     <div className="aboutpage">
+      <section className="aboutpage__device">
+
       <Title name="about" />
       <div className="aboutpage__deviceContainer">{isMobile ? <IphoneX /> : <Macbook />}</div>
+      </section>
       <OurTeam />
       <Footer />
     </div>

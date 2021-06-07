@@ -39,12 +39,13 @@ const Navbar = () => {
           <li>Portfolio</li>
         </Link>
 
-        <Link to="/services" onClick={handleNavbar}>
-          <li>Services</li>
+        <Link to="/about" onClick={handleNavbar}>
+          <li>about</li>
         </Link>
-        <Link to="/contact" onClick={handleNavbar}>
-          <li>Contact</li>
+        <Link className="navbar__specialCase" to="/contact" onClick={handleNavbar}>
+          <li >Contact</li>
         </Link>
+        
       </ul>
       <div className="navbar__contactBtb">
         <div>

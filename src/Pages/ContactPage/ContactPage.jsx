@@ -7,7 +7,7 @@ import './ContactPage.styles.css';
 const ContactPage = () => {
   return (
     <div className="contactpage">
-      <section>
+      <section className="contactpage__contactForm">
         <Title name="contact" />
         <ContactForm />
       </section>

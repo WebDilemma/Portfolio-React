@@ -82,6 +82,8 @@
   .teamMemberCard {
     flex: 0 0 100%;
     max-width: 100%;
+      scroll-snap-align: center;
+
   }
   .teamMemberCard__container {
     flex-direction: column;
