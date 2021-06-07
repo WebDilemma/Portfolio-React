@@ -19,6 +19,8 @@ const OurTeam = () => {
             twitterLink={member.twitterLink}
             websiteLink={member.websiteLink}
             githubLink={member.githubLink}
+            instagramLink={member.instagramLink}
+            linkedinLink={member.linkedinLink}
           />
         ))}
       </div>

@@ -1,7 +1,7 @@
 const Data = [
   {
     name: 'Instagram',
-    thumbnailUrl: 'https://picsum.photos/600/400',
+    thumbnailUrl: 'https://picsum.photos/1280/720',
   },
   {
     name: 'Todo app',

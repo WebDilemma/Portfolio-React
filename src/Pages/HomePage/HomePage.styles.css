@@ -1,5 +1,14 @@
+html, body {
+  height: 100vh;
+  /* overflow-y: scroll; */
+}
+
+
 .homepage {
+  overflow-y: scroll;
+  height: 100vh;
   position: relative;
+  scroll-snap-type: y mandatory;
 }
 
 .homepage__home {

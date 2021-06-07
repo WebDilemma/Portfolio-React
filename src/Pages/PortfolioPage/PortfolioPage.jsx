@@ -6,26 +6,24 @@ import Data from '../../Data/PortfolioData';
 import Footer from '../../Components/Footer/Footer';
 import TechSkills from '../../Components/TechSkills/TechSkills';
 const PortfolioPage = () => {
-  const [showMore, setShowMore] = useState(false);
+  // const [showMore, setShowMore] = useState(false);
   return (
-    <>
-      <section>
+    <div className="portfolioPage">
+      <section className="portfolioPage__projects">
         <Title name="Portfolio" />
         <div className="portfolioPage__items">
-          {showMore
-            ? Data.map((item, index) => <PortfolioCard name={item.name} thumbnailUrl={item.thumbnailUrl} />)
-            : Data.slice(0, 3).map((item, index) => (
-                <PortfolioCard name={item.name} thumbnailUrl={item.thumbnailUrl} />
-              ))}
-
-          <button onClick={() => setShowMore(!showMore)} className="items__moreBtn">
-            {showMore ? 'less' : 'more'}
-          </button>
+              {
+                Data.map((item, index) => <PortfolioCard key={index} name={item.name} thumbnailUrl={item.thumbnailUrl} />
+                )}
         </div>
+          {/* <button onClick={() => setShowMore(!showMore)} className="items__moreBtn">
+            {showMore ? 'less' : 'more'}
+          </button> */}
+          <button className="items__moreBtn">Swipe to see more <i class="fas fa-chevron-right"></i></button>
       </section>
       <TechSkills />
       <Footer />
-    </>
+    </div>
   );
 };
 

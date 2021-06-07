@@ -1,5 +1,6 @@
 .contactView {
-  min-height: 100vh;
+  /* min-height: 100vh; */
+  scroll-snap-align: start;
   position: relative;
   margin: 2rem;
 }
@@ -9,7 +10,7 @@
   bottom: 0;
   left: 0;
   font-size: 2rem;
-  padding: 0 0 2rem 4rem;
+  /* padding: 0 0 2rem 4rem; */
   font-family: 'Fira code';
   color: #00ffd1;
 }
@@ -21,9 +22,13 @@
   }
 }
 
-/* @media (max-width: 650px) {
+@media (max-width: 650px) {
   .contactView__email {
-    position: absolute;
+    /* position: absolute; */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
     
   }
-} */
+}

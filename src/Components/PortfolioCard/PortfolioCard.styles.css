@@ -1,5 +1,7 @@
 .portfolioCard {
   flex: 0 0 33.3333%;
+  scroll-snap-align: center;
+  /* display: flex; */
 }
 
 .portfolioCard__container {

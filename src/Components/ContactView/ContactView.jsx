@@ -8,7 +8,11 @@ const ContactView = () => {
     <section className="contactView">
       <Title name="contact" />
       <ContactForm />
-      <div className="contactView__email">contact@webdilemma.com</div>
+      <div className="contactView__email"><p>
+        
+        contact@webdilemma.com
+        </p>
+        </div>
     </section>
   );
 };

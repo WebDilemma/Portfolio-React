@@ -1,16 +1,38 @@
+html, body {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.portfolioPage {
+   overflow-y: scroll;
+   scroll-snap-type: y mandatory;
+   height: 100vh;
+  }
+  
+  .portfolioPage__projects {
+  position: relative;
+  scroll-snap-align: start;
+height: 100vh;
+
+}
+
 .portfolioPage__items {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  min-height: 50vh;
   margin: 0 8rem;
-  border: 1px white solid;
+  /* border: 1px white solid; */
   border-radius: 2rem;
   position: relative;
   padding: 1rem;
   transition: all 0.3s ease;
+  scroll-snap-type: x mandatory;
   /* justify-content: center; */
 }
 
 .items__moreBtn {
+
   text-transform: capitalize;
   cursor: pointer;
   border-radius: 100px;
@@ -20,9 +42,9 @@
   font-size: 1rem;
   outline: none;
   padding: 1rem 2rem;
-  position: absolute;
-  bottom: -30px;
-  left: 50%;
+    position: absolute; 
+  bottom: 5%; 
+  left: 50%; 
   transform: translateX(-50%);
   z-index: 2;
 }

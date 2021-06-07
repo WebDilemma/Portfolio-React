@@ -9,8 +9,8 @@ import ContactView from '../../Components/ContactView/ContactView';
 const HomePage = () => {
   return (
     <div className="homepage">
-      <Home className="homepage__home" />
-      <PortfolioView />
+      <Home />
+      <PortfolioView  />
       {/* <TemplateView /> */}
       <AboutView />
       <ContactView />

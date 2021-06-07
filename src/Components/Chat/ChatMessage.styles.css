@@ -117,3 +117,22 @@
 #chat .chat__conversation-board__message__bubble:active {
   background: var(--chat-bubble-active-background);
 }
+
+@media (max-width: 650px) {
+  #chat .chat__conversation-board__message-container:not(:last-child) {
+    margin: 0 0 1em 0;
+  }
+  #chat .chat__conversation-board__message__person {
+    margin: 0;
+  }
+  #chat .chat__conversation-board__message-container.reversed .chat__conversation-board__message__person {
+    margin: 0;
+  }
+  #chat .chat__conversation-board__message__context {
+    max-width: 65%;
+  }
+  #chat .chat__conversation-board__message__bubble span {
+    font-size: 0.8em;
+    line-height: 1.2em;
+  }
+}

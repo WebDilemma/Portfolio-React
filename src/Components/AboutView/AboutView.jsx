@@ -4,15 +4,21 @@ import Title from '../Title/Title';
 import './AboutView.styles.css';
 
 const AboutView = () => {
-  const [width, setWidth] = useState();
+  const [isMobile, setMobile] = useState(window.innerWidth < 960);
+
+  const updateMedia = () => {
+    setMobile(window.innerWidth < 960);
+  };
+
   useEffect(() => {
-    let value = window.innerWidth;
-    setWidth(value);
+    window.addEventListener('resize', updateMedia);
+    return () => window.removeEventListener('resize', updateMedia);
   });
+ 
 
   return (
     <section className="about" id="about">
-      {width <= 960 && <Title name="about" />}
+      {isMobile && <Title name="about" />}
       <div className="about__container">
         <div className="about__infoContainer">
           <div className="about__row">

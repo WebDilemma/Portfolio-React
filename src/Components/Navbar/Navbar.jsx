@@ -10,7 +10,7 @@ const Navbar = () => {
     const navbar = navRef;
     let value = window.scrollY;
     if (window.innerWidth < 960) return;
-    navbar.current.style.transform = `translateX(${value * -0.01}px)`;
+    // navbar.current.style.transform = `translateX(${value * -0.01}px)`;
   };
 
   useEffect(() => {

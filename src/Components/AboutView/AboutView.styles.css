@@ -1,5 +1,6 @@
 .about {
-  /* min-height: 100vh; */
+  min-height: 100vh;
+  scroll-snap-align: start;
   color: white;
   z-index: 0;
   position: relative;
