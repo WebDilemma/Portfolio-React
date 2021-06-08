@@ -1,6 +1,7 @@
 .about {
   min-height: 100vh;
   scroll-snap-align: start;
+  scroll-snap-stop: always;
   color: white;
   z-index: 0;
   position: relative;
@@ -149,6 +150,7 @@
   }
   .about__seeMore {
     flex: 0 0 100%;
+    max-width: 100%;
   }
 
   .about__infoImg {

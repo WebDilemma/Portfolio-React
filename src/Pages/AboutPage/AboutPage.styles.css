@@ -4,18 +4,19 @@ html, body {
 }
 
 .aboutpage {
- 
   overflow-y: scroll;
-   scroll-snap-type: y mandatory;
-   height: 100vh;
+  scroll-snap-type: y mandatory;
+  height: 100vh;
 }
 .aboutpage__device {
+  padding-top: 3rem;
   scroll-snap-align: start;
+  scroll-snap-stop: always;
   height: auto;
 }
 .aboutpage__deviceContainer {
   scroll-snap-align: start;
- 
+  scroll-snap-stop: always;
   display: flex;
   justify-content: center;
 }

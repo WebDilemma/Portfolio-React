@@ -1,6 +1,8 @@
 .contactView {
   /* min-height: 100vh; */
   scroll-snap-align: start;
+    scroll-snap-stop: always;
+
   position: relative;
   margin: 2rem;
 }

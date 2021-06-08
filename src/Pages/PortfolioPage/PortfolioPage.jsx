@@ -19,7 +19,7 @@ const PortfolioPage = () => {
           {/* <button onClick={() => setShowMore(!showMore)} className="items__moreBtn">
             {showMore ? 'less' : 'more'}
           </button> */}
-          <p className="items__moreBtn">Swipe to see more <i class="fas fa-chevron-right"></i></p>
+          <div className="items__moreBtn">Swipe to see more <i class="fas fa-chevron-right"></i></div>
       </section>
       <TechSkills />
       <Footer />

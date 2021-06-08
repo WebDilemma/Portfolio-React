@@ -44,10 +44,6 @@
 }
 
 @media (max-width: 650px) {
-  .title {
-   padding-top:2.5rem;
-
-  }
   .title p {
     padding: 2.5rem 0 1.3rem 2rem;
 

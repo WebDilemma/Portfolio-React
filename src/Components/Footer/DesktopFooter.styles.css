@@ -6,6 +6,8 @@
   font-family: 'roboto';
   background: black;
   scroll-snap-align: end;
+   scroll-snap-align: center;
+    scroll-snap-stop: always;
 }
 
 .footer__logo,

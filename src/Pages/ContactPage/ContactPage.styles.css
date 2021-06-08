@@ -7,14 +7,17 @@ html, body {
   overflow-y: scroll;
    scroll-snap-type: y mandatory;
    height: 100vh;
-}
-
-.reachOut {
+  }
+  
+  .reachOut {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+  }
+  
+  .contactpage__contactForm {
+  padding-top: 3rem;
   scroll-snap-align: start;
-}
-
-.contactpage__contactForm {
-  scroll-snap-align: start;
+  scroll-snap-stop: always;
 }
 
 .contactpage__reachOut {

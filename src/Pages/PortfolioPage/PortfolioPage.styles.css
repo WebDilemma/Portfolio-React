@@ -10,8 +10,10 @@ html, body {
   }
   
   .portfolioPage__projects {
+    padding-top: 2.5rem;
   position: relative;
   scroll-snap-align: start;
+  scroll-snap-stop: always;
 height: 100vh;
 
 }

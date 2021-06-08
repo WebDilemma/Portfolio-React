@@ -9,6 +9,7 @@
 
 .ourTeam {
   scroll-snap-align: start;
+  scroll-snap-stop: always;
 }
 
 @media (max-width: 960px) {

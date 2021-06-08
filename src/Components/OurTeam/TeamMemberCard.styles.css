@@ -4,6 +4,8 @@
   display: flex;
   justify-content: center;
   font-family: 'Fira code';
+   scroll-snap-align: center;
+    scroll-snap-stop: always;
 }
 .teamMemberCard__container {
   padding: 1rem;
@@ -82,8 +84,8 @@
   .teamMemberCard {
     flex: 0 0 100%;
     max-width: 100%;
-      scroll-snap-align: center;
-
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
   }
   .teamMemberCard__container {
     flex-direction: column;

@@ -10,8 +10,10 @@
 .skills {
   display: flex;
   scroll-snap-align: start;
+  scroll-snap-stop: always;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   min-height: 100vh;  
 }
 
