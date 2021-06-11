@@ -1,29 +1,29 @@
-html, body {
+html,
+body {
   height: 100vh;
   overflow: hidden;
 }
 
 .portfolioPage {
-   overflow-y: scroll;
-   scroll-snap-type: y mandatory;
-   height: 100vh;
-  }
-  
-  .portfolioPage__projects {
-    padding-top: 2.5rem;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+}
+
+.portfolioPage__projects {
+  padding-top: 2.5rem;
   position: relative;
   scroll-snap-align: start;
   scroll-snap-stop: always;
-height: 100vh;
-
+  min-height: 100vh;
 }
 
 .portfolioPage__items {
   display: flex;
-  flex-wrap: nowrap;
-  overflow-x: scroll;
-  margin: 0 8rem;
-  flex: 1;
+  flex-wrap: wrap;
+  /* overflow-x: scroll; */
+  margin: 0 16rem;
+  /* flex: 1; */
   border-radius: 2rem;
   position: relative;
   padding: 1rem;
@@ -33,7 +33,6 @@ height: 100vh;
 }
 
 .items__moreBtn {
-
   text-transform: capitalize;
   cursor: pointer;
   /* border-radius: 100px;
@@ -44,9 +43,9 @@ height: 100vh;
   outline: none;
   padding: 1rem 2rem;
   font-family: "roboto";
-    position: absolute; 
+  position: absolute;
   /* bottom: 5%;  */
-  left: 50%; 
+  left: 50%;
   transform: translateX(-50%);
   z-index: 2;
 }

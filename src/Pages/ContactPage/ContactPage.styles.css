@@ -1,20 +1,21 @@
-html, body {
+html,
+body {
   height: 100vh;
   overflow: hidden;
 }
 
 .contactpage {
   overflow-y: scroll;
-   scroll-snap-type: y mandatory;
-   height: 100vh;
-  }
-  
-  .reachOut {
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
-  }
-  
-  .contactpage__contactForm {
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+}
+
+.reachOut {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+.contactpage__contactForm {
   padding-top: 3rem;
   scroll-snap-align: start;
   scroll-snap-stop: always;
@@ -51,7 +52,7 @@ html, body {
 .reachOut__infoContainer {
   margin-bottom: 1rem;
   font-size: 1.8rem;
-  font-family: 'roboto';
+  font-family: "roboto";
   line-height: 3rem;
   font-weight: 300;
 }

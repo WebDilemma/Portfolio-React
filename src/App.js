@@ -1,11 +1,11 @@
-import React from 'react';
-import './App.css';
-import Navbar from './Components/Navbar/Navbar';
-import HomePage from './Pages/HomePage/HomePage';
-import { Route, Switch } from 'react-router-dom';
-import ContactPage from './Pages/ContactPage/ContactPage';
-import PortfolioPage from './Pages/PortfolioPage/PortfolioPage';
-import AboutPage from './Pages/AboutPage/AboutPage';
+import React from "react";
+import "./App.css";
+import Navbar from "./Components/Navbar/Navbar";
+import HomePage from "./Pages/HomePage/HomePage";
+import { Route, Switch } from "react-router-dom";
+import ContactPage from "./Pages/ContactPage/ContactPage";
+import PortfolioPage from "./Pages/PortfolioPage/PortfolioPage";
+import AboutPage from "./Pages/AboutPage/AboutPage";
 
 function App() {
   return (

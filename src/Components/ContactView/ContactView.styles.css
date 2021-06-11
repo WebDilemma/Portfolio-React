@@ -1,8 +1,10 @@
 .contactView {
-  /* min-height: 100vh; */
+  min-height: 100vh;
   scroll-snap-align: start;
-    scroll-snap-stop: always;
-
+  scroll-snap-stop: always;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   position: relative;
   margin: 2rem;
 }
@@ -14,7 +16,7 @@
   font-size: 2rem;
   scroll-snap-align: end;
   padding: 0 0 2rem 4rem;
-  font-family: 'Fira code';
+  font-family: "Fira code";
   color: #00ffd1;
 }
 
@@ -32,6 +34,6 @@
     justify-content: center;
     width: 100%;
     padding: 0;
-    padding-bottom: 1rem;
+    padding-bottom: 3rem;
   }
 }

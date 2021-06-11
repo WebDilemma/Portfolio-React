@@ -12,7 +12,7 @@ const MobileFooter = () => {
         </a>       <i class="fa fa-linkedin-square" aria-hidden="true"></i>
         <i class="fa fa-instagram" aria-hidden="true"></i>
         <a href="mailto:abc@example.com">
-          <i class="fa fa-envelope" aria-hidden="true"></i>
+          <i className="fa fa-envelope" aria-hidden="true"></i>
         </a>
       </div>
       <div className="mobileFooter__policy">

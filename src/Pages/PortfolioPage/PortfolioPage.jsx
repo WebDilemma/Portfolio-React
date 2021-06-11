@@ -1,25 +1,32 @@
-import React, { useState } from 'react';
-import PortfolioCard from '../../Components/PortfolioCard/PortfolioCard';
-import Title from '../../Components/Title/Title';
-import './PortfolioPage.styles.css';
-import Data from '../../Data/PortfolioData';
-import Footer from '../../Components/Footer/Footer';
-import TechSkills from '../../Components/TechSkills/TechSkills';
+import React, { useState } from "react";
+import PortfolioCard from "../../Components/PortfolioCard/PortfolioCard";
+import Title from "../../Components/Title/Title";
+import "./PortfolioPage.styles.css";
+import Data from "../../Data/PortfolioData";
+import Footer from "../../Components/Footer/Footer";
+import TechSkills from "../../Components/TechSkills/TechSkills";
+import Planets from "../../Components/Planets/Planets";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from "react-responsive-carousel";
 const PortfolioPage = () => {
   // const [showMore, setShowMore] = useState(false);
   return (
     <div className="portfolioPage">
+      <Planets />
       <section className="portfolioPage__projects">
         <Title name="Portfolio" />
         <div className="portfolioPage__items">
-              {
-                Data.map((item, index) => <PortfolioCard key={index} name={item.name} thumbnailUrl={item.thumbnailUrl} />
-                )}
+          <Carousel>
+            {Data.map((item, index) => (
+              <PortfolioCard
+                key={index}
+                name={item.name}
+                thumbnailUrl={item.thumbnailUrl}
+              />
+            ))}
+          </Carousel>
+          {/* <div className="items__moreBtn">Swipe to see more <i class="fas fa-chevron-right"></i></div> */}
         </div>
-          {/* <button onClick={() => setShowMore(!showMore)} className="items__moreBtn">
-            {showMore ? 'less' : 'more'}
-          </button> */}
-          <div className="items__moreBtn">Swipe to see more <i class="fas fa-chevron-right"></i></div>
       </section>
       <TechSkills />
       <Footer />

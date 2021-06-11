@@ -24,15 +24,16 @@
 .screen:before {
   border: 2px solid #cacacc;
   border-radius: 3% 3% 0.5% 0.5% / 5%;
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.8) inset, 0 0 1px 2px rgba(255, 255, 255, 0.3) inset;
-  content: '';
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.8) inset,
+    0 0 1px 2px rgba(255, 255, 255, 0.3) inset;
+  content: "";
   display: block;
   /* for aspect ratio ~67:100 */
   padding-top: 67%;
 }
 
 .screen:after {
-  content: '';
+  content: "";
   border-top: 2px solid rgba(255, 255, 255, 0.15);
   position: absolute;
   bottom: 0.75%;
@@ -60,7 +61,7 @@
 }
 
 .base:before {
-  content: '';
+  content: "";
   display: block;
   /* for aspect ratio ~33:1000*/
   padding-top: 3.3%;
@@ -91,7 +92,7 @@
     rgba(255, 255, 255, 0.8) 99.5%,
     rgba(0, 0, 0, 0.5) 100%
   );
-  content: '';
+  content: "";
   height: 53%;
   position: absolute;
   top: 0;
@@ -101,7 +102,8 @@
 .notch {
   background: #ddd;
   border-radius: 0 0 7% 7% / 0 0 95% 95%;
-  box-shadow: -5px -1px 3px rgba(0, 0, 0, 0.2) inset, 5px -1px 3px rgba(0, 0, 0, 0.2) inset;
+  box-shadow: -5px -1px 3px rgba(0, 0, 0, 0.2) inset,
+    5px -1px 3px rgba(0, 0, 0, 0.2) inset;
   margin-left: auto;
   margin-right: auto;
   margin-top: -3.5%;
@@ -112,7 +114,7 @@
 }
 
 .notch:before {
-  content: '';
+  content: "";
   display: block;
   /* for aspect ratio ~1:10 */
   padding-top: 10%;

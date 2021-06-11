@@ -1,7 +1,9 @@
 #chat .chat__conversation-board__message-container.reversed {
   flex-direction: row-reverse;
 }
-#chat .chat__conversation-board__message-container.reversed .chat__conversation-board__message__bubble {
+#chat
+  .chat__conversation-board__message-container.reversed
+  .chat__conversation-board__message__bubble {
   position: relative;
 }
 #chat
@@ -10,18 +12,26 @@
   span:not(:last-child) {
   margin: 0 0 2em 0;
 }
-#chat .chat__conversation-board__message-container.reversed .chat__conversation-board__message__person {
+#chat
+  .chat__conversation-board__message-container.reversed
+  .chat__conversation-board__message__person {
   margin: 0 0 0 1.2em;
 }
 
-#chat .chat__conversation-board__message-container.reversed .chat__conversation-board__message__bubble span {
+#chat
+  .chat__conversation-board__message-container.reversed
+  .chat__conversation-board__message__bubble
+  span {
   /* background-color: #3494ec;
   color: #fff; */
   color: black;
   background-color: #e2ffc7;
 }
 
-#chat .chat__conversation-board__message-container.reversed .chat__conversation-board__message__bubble span::after {
+#chat
+  .chat__conversation-board__message-container.reversed
+  .chat__conversation-board__message__bubble
+  span::after {
   border-width: 0px 0 10px 10px;
   border-color: transparent transparent transparent #e1ffc7;
   top: 0;
@@ -52,7 +62,7 @@
   position: relative;
 }
 #chat .chat__conversation-board__message__person__avatar::before {
-  content: '';
+  content: "";
   position: absolute;
   height: 100%;
   width: 100%;
@@ -100,7 +110,7 @@
   padding: 0.5em 0.8em;
   line-height: 1.5;
   border-radius: 6px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1em;
 }
 
@@ -125,7 +135,9 @@
   #chat .chat__conversation-board__message__person {
     margin: 0;
   }
-  #chat .chat__conversation-board__message-container.reversed .chat__conversation-board__message__person {
+  #chat
+    .chat__conversation-board__message-container.reversed
+    .chat__conversation-board__message__person {
     margin: 0;
   }
   #chat .chat__conversation-board__message__context {

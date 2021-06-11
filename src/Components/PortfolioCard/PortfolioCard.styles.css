@@ -6,7 +6,11 @@
 }
 
 .portfolioCard__container {
-  background: linear-gradient(152.97deg, rgba(255, 255, 255, 0.2) 0%, rgba(21, 21, 21, 0) 100%);
+  background: linear-gradient(
+    152.97deg,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(21, 21, 21, 0) 100%
+  );
   backdrop-filter: blur(42px);
   margin: 2rem;
   overflow: hidden;
@@ -26,7 +30,7 @@
 .portfolioCard__title {
   font-size: 2rem;
   margin: 1rem;
-  font-family: 'Roboto';
+  font-family: "Roboto";
 }
 
 @media (max-width: 1280px) {

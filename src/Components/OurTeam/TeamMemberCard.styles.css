@@ -3,9 +3,9 @@
   max-width: 33.33333%;
   display: flex;
   justify-content: center;
-  font-family: 'Fira code';
-   scroll-snap-align: center;
-    scroll-snap-stop: always;
+  font-family: "Fira code";
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
 }
 .teamMemberCard__container {
   padding: 1rem;

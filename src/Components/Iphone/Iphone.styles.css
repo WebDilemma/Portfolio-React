@@ -9,7 +9,7 @@
 }
 .iPhone:before,
 .iPhone:after {
-  content: '';
+  content: "";
   position: absolute;
   z-index: 2;
 }
@@ -32,7 +32,7 @@
 
 .icon {
   z-index: -1;
-  font-family: 'weathericons';
+  font-family: "weathericons";
   position: absolute;
   top: 1rem;
   left: 1rem;

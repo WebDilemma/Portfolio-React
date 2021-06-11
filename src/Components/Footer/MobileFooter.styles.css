@@ -4,12 +4,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   margin-top: 4rem;
   padding: 1rem 0 3rem 0;
-   scroll-snap-align: start;
-    scroll-snap-stop: always;
-   /* height: 200px; */
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  /* height: 200px; */
 }
 
 .mobileFooter__follow {

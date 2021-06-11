@@ -29,10 +29,10 @@
 }
 
 .navbar__nav li {
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: 500;
-  font-family: 'Roboto';
-  
+  font-family: "Roboto";
+
   padding: 0 1rem;
   /* text-align: center; */
   text-transform: uppercase;
@@ -83,20 +83,23 @@
   }
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1280px) {
   .navbar__specialCase {
     display: block;
-    position: absolute;
+    /* position: absolute;
     left: 0;
-    bottom: 0;
-background: rgba(255, 255, 255, 0.24);
-color: black;
+    bottom: 0; */
+    background: rgba(255, 255, 255, 0.24);
+    color: black;
   }
   .navbar {
     display: flex;
     justify-content: flex-end;
     margin-right: 5rem;
     position: relative;
+    /* background: chartreuse; */
+    /* height: 100vh; */
+    /* z-index: -100; */
     /* transform: translateX(-50px); */
   }
   .navbar__logoContainer {
@@ -126,7 +129,6 @@ color: black;
   }
 
   .navbar__nav.active li:hover {
-    transition: cubic-bezier(1, 0, 0, 1);
     background: rgba(255, 255, 255, 0.24);
     color: black;
   }
@@ -134,10 +136,12 @@ color: black;
   .navbar__nav.active {
     /* left: 50px; */
     background-blend-mode: hue;
-    background: linear-gradient(152.97deg, rgba(255, 255, 255, 0.2) 0%, rgba(21, 21, 21, 0) 100%);
-    backdrop-filter: blur(42px);
+    /* background: linear-gradient(152.97deg, rgba(255, 255, 255, 0.2) 0%, rgba(21, 21, 21, 0) 100%); */
+    background-color: rgba(0, 0, 0, 0.01);
+    backdrop-filter: blur(40px);
     top: 0;
     z-index: 1;
+    height: 100vh;
   }
 
   .navbar__burgerBtn {

@@ -17,7 +17,7 @@
   overflow-y: hidden;
 }
 #chat::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -60,11 +60,11 @@
 
 .chat__header__container__title {
   font-size: 1.3em;
-  font-family: 'Roboto';
+  font-family: "Roboto";
 }
 
 .chat__header__container__status {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-weight: 300;
   font-size: 0.8em;
   padding-top: 0.4em;

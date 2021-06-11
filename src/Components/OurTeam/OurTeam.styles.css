@@ -1,7 +1,7 @@
 .ourTeam__members {
   display: flex;
   flex: 1;
-  
+  scroll-snap-type: x mandatory;
   /* align-items: center; */
   flex-wrap: wrap;
   margin: 0 8rem;
@@ -21,5 +21,7 @@
 @media (max-width: 650px) {
   .ourTeam__members {
     margin: 0 2rem;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
   }
 }
