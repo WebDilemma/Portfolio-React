@@ -1,7 +1,7 @@
-import React, { useEffect, useRef, useState } from 'react';
-import './Navbar.styles.css';
-import Logo from '../../Assets/wd_logo_nav.png';
-import { Link } from 'react-router-dom';
+import React, { useEffect, useRef, useState } from "react";
+import "./Navbar.styles.css";
+import Logo from "../../Assets/wd_logo_nav.png";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const navRef = useRef();
@@ -28,10 +28,10 @@ const Navbar = () => {
         <img id="logoImg" className="navbar__logoImg" src={Logo} alt="logo" />
       </div>
       <div className="navbar__burgerBtn" onClick={handleNavbar}>
-        <i className={showNav ? 'fas fa-times' : 'fas fa-bars'}></i>
+        <i className={showNav ? "fas fa-times" : "fas fa-bars"}></i>
       </div>
 
-      <ul className={showNav ? 'navbar__nav active' : 'navbar__nav'}>
+      <ul className={showNav ? "navbar__nav active" : "navbar__nav"}>
         <Link to="/" onClick={handleNavbar}>
           <li>Home</li>
         </Link>
@@ -42,16 +42,14 @@ const Navbar = () => {
         <Link to="/about" onClick={handleNavbar}>
           <li>about</li>
         </Link>
-        <Link className="navbar__specialCase" to="/contact" onClick={handleNavbar}>
-          <li >Contact</li>
+        <Link
+          className="navbar__specialCase"
+          to="/contact"
+          onClick={handleNavbar}
+        >
+          <li>Contact</li>
         </Link>
-        
       </ul>
-      <div className="navbar__contactBtb">
-        <div>
-          <Link to="/contact">Let's talk</Link>
-        </div>
-      </div>
     </nav>
   );
 };

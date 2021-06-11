@@ -16,7 +16,7 @@ const PortfolioPage = () => {
       <section className="portfolioPage__projects">
         <Title name="Portfolio" />
         <div className="portfolioPage__items">
-          <Carousel>
+          <Carousel infiniteLoop>
             {Data.map((item, index) => (
               <PortfolioCard
                 key={index}

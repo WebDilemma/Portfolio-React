@@ -2,63 +2,147 @@
   flex: 0 0 33.3333%;
   scroll-snap-align: center;
   scroll-snap-stop: always;
-  /* display: flex; */
+  margin: 0 4rem 4rem 4rem;
+  font-family: "Poppins";
 }
 
 .portfolioCard__container {
-  background: linear-gradient(
-    152.97deg,
-    rgba(255, 255, 255, 0.2) 0%,
-    rgba(21, 21, 21, 0) 100%
-  );
-  backdrop-filter: blur(42px);
-  margin: 2rem;
-  overflow: hidden;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(80px);
+  /* overflow: hidden; */
   border-radius: 1rem;
 }
 
 .portfolioCard__thumbnail {
   object-fit: contain;
-  width: 100%;
-  transition: all 0.3s ease;
+  width: 60%;
+  transition: all 0.3s ease-out;
+  padding: 1rem;
+  border-radius: 2rem;
 }
 
-.portfolioCard__thumbnail:hover {
-  transform: scale(1.06);
+.portfolioCard__thumbnail.active {
+  transition: all 0.3s ease;
+  transform: translateY(-100%);
 }
 
 .portfolioCard__title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1rem 1rem 1rem 2rem;
+  font-size: 8rem;
+  line-height: 8rem;
+  font-weight: 400;
+  transition: all 0.3s ease-in;
+  font-family: "Poppins";
+  text-align: left;
+  animation: shrinkOut 0.3s;
+}
+
+.portfolioCard__title.active {
+  display: none;
+}
+
+.portfolioCard__more {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 0 2rem 2rem 0;
+  cursor: pointer;
+}
+
+.portfolioCard__more .fa-chevron-up,
+.portfolioCard__more .fa-chevron-down {
   font-size: 2rem;
-  margin: 1rem;
-  font-family: "Roboto";
 }
 
-@media (max-width: 1280px) {
-  .portfolioCard__container {
-    margin: 1.2rem;
+.portfolioCard__info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: left !important;
+}
+
+.portfolioCard__infoContainer {
+  padding: 1rem 1rem 1rem 2rem;
+  display: flex;
+}
+
+.infoContainer__left {
+  display: flex;
+  flex-direction: column;
+  /* flex: 1; */
+}
+
+.infoContainer__right {
+  display: flex;
+  flex-direction: column;
+}
+
+.infoContainer__right .fa-github,
+.infoContainer__right .fa-globe {
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  font-size: 4rem;
+  opacity: 0.6;
+}
+
+.infoContainer__right .fa-github:hover,
+.infoContainer__right .fa-globe:hover {
+  opacity: 1;
+}
+
+.infoContainer__title {
+  font-size: 4rem;
+  font-weight: 400;
+  transition: all 0.3s ease-out;
+  animation: 0.3s shrinkIn;
+}
+
+.infoContainer__decription {
+  width: 80%;
+  font-size: 1.2rem;
+  font-weight: 300;
+  opacity: 0.8;
+}
+
+.infoContainer__stackUsed {
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+
+.stackUsed__stack {
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, 0.363);
+  margin: 0 0.2rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+@keyframes shrinkIn {
+  0% {
+    font-size: 8rem;
   }
-  .portfolioCard__title {
-    font-size: 1.2rem;
+  100% {
+    font-size: 4rem;
   }
 }
 
-@media (max-width: 960px) {
-  .portfolioCard {
-    flex: 0 0 50%;
+@keyframes imageScale {
+  0% {
+    transform: scale(1);
   }
-  .portfolioCard__container {
-    margin: 0.9rem;
-  }
-
-  .portfolioCard__title {
-    font-size: 0.9rem;
+  100% {
+    transform: scale(1.08);
   }
 }
 
-@media (max-width: 650px) {
-  .portfolioCard {
-    flex: 0 0 100%;
+@keyframes shrinkOut {
+  0% {
+    font-size: 4rem;
   }
-  .portfolioCard__thumbnail {
+  100% {
+    font-size: 8rem;
   }
 }
