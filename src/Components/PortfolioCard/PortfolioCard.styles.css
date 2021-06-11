@@ -4,6 +4,7 @@
   scroll-snap-stop: always;
   margin: 0 4rem 4rem 4rem;
   font-family: "Poppins";
+  z-index: 10;
 }
 
 .portfolioCard__container {
@@ -18,6 +19,7 @@
   width: 60%;
   transition: all 0.3s ease-out;
   padding: 1rem;
+  opacity: 0.8;
   border-radius: 2rem;
 }
 
@@ -27,6 +29,7 @@
 }
 
 .portfolioCard__title {
+  text-transform: capitalize;
   position: absolute;
   top: 0;
   left: 0;
@@ -48,7 +51,7 @@
   position: absolute;
   right: 0;
   bottom: 0;
-  margin: 0 2rem 2rem 0;
+  margin: 0 3rem 2rem 0;
   cursor: pointer;
 }
 
@@ -83,7 +86,7 @@
 
 .infoContainer__right .fa-github,
 .infoContainer__right .fa-globe {
-  padding: 0.5rem 1rem 0.5rem 1rem;
+  padding: 0.5rem;
   font-size: 4rem;
   opacity: 0.6;
 }

@@ -1,7 +1,16 @@
 import React, { useState } from "react";
 import "./PortfolioCard.styles.css";
 
-const PortfolioCard = ({ thumbnailUrl, name }) => {
+const PortfolioCard = (props) => {
+  const {
+    thumbnailUrl,
+    name,
+    description,
+    stacks,
+    githubRepoLink,
+    liveDemoLink,
+  } = props;
+  console.log(stacks);
   const [showInfo, setShowInfo] = useState(false);
   return (
     <div className="portfolioCard">
@@ -29,24 +38,28 @@ const PortfolioCard = ({ thumbnailUrl, name }) => {
             <div className="portfolioCard__infoContainer">
               <div className="infoContainer__left">
                 <div className="infoContainer__title">{name}</div>
-                <div className="infoContainer__decription">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-                  enim, odit aperiam debitis itaque eveniet vero dolores culpa
-                  iusto nesciunt natus veniam quas, saepe praesentium maxime
-                  molestiae nisi magnam est.
-                </div>
+                <div className="infoContainer__decription">{description}</div>
                 <div className="infoContainer__stackUsed">
-                  Stack: <span className="stackUsed__stack">Djano</span>
+                  Stack:{" "}
+                  {stacks.map((stack) => (
+                    <span key={stack} className="stackUsed__stack">
+                      {stack}
+                    </span>
+                  ))}
                   <span className="stackUsed__stack">React</span>
                 </div>
               </div>
               <div className="infoContainer__right">
-                <a href="#">
-                  <i class="fa fa-github" aria-hidden="true"></i>
-                </a>
-                <a href="#">
-                  <i class="fa fa-globe" aria-hidden="true"></i>
-                </a>
+                {githubRepoLink && (
+                  <a href={githubRepoLink}>
+                    <i class="fa fa-github" aria-hidden="true"></i>
+                  </a>
+                )}
+                {liveDemoLink && (
+                  <a href={liveDemoLink}>
+                    <i class="fa fa-globe" aria-hidden="true"></i>
+                  </a>
+                )}
               </div>
             </div>
           </div>

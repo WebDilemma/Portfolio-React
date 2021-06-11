@@ -22,6 +22,10 @@ const PortfolioPage = () => {
                 key={index}
                 name={item.name}
                 thumbnailUrl={item.thumbnailUrl}
+                description={item.description}
+                stacks={item.stacks}
+                githubRepoLink={item.githubRepoLink}
+                liveDemoLink={item.liveDemoLink}
               />
             ))}
           </Carousel>
