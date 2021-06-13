@@ -40,13 +40,12 @@ const PortfolioCard = (props) => {
                 <div className="infoContainer__title">{name}</div>
                 <div className="infoContainer__decription">{description}</div>
                 <div className="infoContainer__stackUsed">
-                  Stack:{" "}
+                  <span>Stack:</span>
                   {stacks.map((stack) => (
-                    <span key={stack} className="stackUsed__stack">
+                    <span key={stack} className="stackUsed__stackItem">
                       {stack}
                     </span>
                   ))}
-                  <span className="stackUsed__stack">React</span>
                 </div>
               </div>
               <div className="infoContainer__right">

@@ -10,13 +10,11 @@
 .portfolioCard__container {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(80px);
-  /* overflow: hidden; */
   border-radius: 1rem;
+  position: relative;
 }
 
 .portfolioCard__thumbnail {
-  object-fit: contain;
-  width: 60%;
   transition: all 0.3s ease-out;
   padding: 1rem;
   opacity: 0.8;
@@ -48,15 +46,11 @@
 }
 
 .portfolioCard__more {
-  position: absolute;
+  position: fixed;
   right: 0;
   bottom: 0;
   margin: 0 3rem 2rem 0;
   cursor: pointer;
-}
-
-.portfolioCard__more .fa-chevron-up,
-.portfolioCard__more .fa-chevron-down {
   font-size: 2rem;
 }
 
@@ -65,29 +59,30 @@
   top: 0;
   left: 0;
   width: 100%;
+  height: 100%;
   text-align: left !important;
 }
 
 .portfolioCard__infoContainer {
   padding: 1rem 1rem 1rem 2rem;
+  height: 100%;
   display: flex;
 }
 
 .infoContainer__left {
   display: flex;
   flex-direction: column;
-  /* flex: 1; */
 }
 
 .infoContainer__right {
   display: flex;
   flex-direction: column;
+  font-size: 4rem;
 }
 
 .infoContainer__right .fa-github,
 .infoContainer__right .fa-globe {
   padding: 0.5rem;
-  font-size: 4rem;
   opacity: 0.6;
 }
 
@@ -97,6 +92,8 @@
 }
 
 .infoContainer__title {
+  top: 0;
+  left: 0;
   font-size: 4rem;
   font-weight: 400;
   transition: all 0.3s ease-out;
@@ -111,11 +108,14 @@
 }
 
 .infoContainer__stackUsed {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   margin-top: 1rem;
   font-size: 2rem;
 }
 
-.stackUsed__stack {
+.stackUsed__stackItem {
   font-size: 1rem;
   background-color: rgba(0, 0, 0, 0.363);
   margin: 0 0.2rem;
@@ -123,29 +123,117 @@
   border-radius: 0.5rem;
 }
 
-@keyframes shrinkIn {
+/* @keyframes shrinkIn {
   0% {
-    font-size: 8rem;
+    transform: scale(50%);
   }
   100% {
-    font-size: 4rem;
-  }
-}
-
-@keyframes imageScale {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(1.08);
+    transform: scale(100%);
   }
 }
 
 @keyframes shrinkOut {
   0% {
-    font-size: 4rem;
+    transform: scale(100%);
   }
   100% {
-    font-size: 8rem;
+    transform: scale(100%);
+  }
+} */
+
+@media (max-width: 1280px) {
+  .portfolioCard {
+    margin: 2.5rem;
+    margin-top: 0;
+  }
+  .portfolioCard__title {
+    font-size: 5rem;
+    line-height: 5rem;
+    padding: 0.66rem 0.66rem 0.66rem 1.3rem;
+  }
+  .portfolioCard__container {
+    border-radius: 1rem;
+  }
+  .portfolioCard__thumbnail {
+    padding: 0.66rem;
+    border-radius: 1.33rem;
+  }
+  .portfolioCard__more {
+    margin: 0 2rem 1rem 0;
+    font-size: 1.33rem;
+  }
+  .portfolioCard__infoContainer {
+    padding: 0.66rem 0.66rem 0.66rem 1.33rem;
+  }
+  .infoContainer__title {
+    font-size: 2.64rem;
+  }
+  .infoContainer__decription {
+    font-size: 0.8rem;
+  }
+  .infoContainer__stackUsed {
+    margin-top: 0.66rem;
+    font-size: 1.3rem;
+  }
+
+  .stackUsed__stackItem {
+    font-size: 0.66rem;
+    background-color: rgba(0, 0, 0, 0.363);
+    margin: 0 0.2rem;
+    padding: 0.33rem;
+    border-radius: 0.33rem;
+  }
+  .infoContainer__right {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .portfolioCard {
+    margin: 0;
+    margin-bottom: 2rem;
+  }
+  .portfolioCard__title {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    padding: 0.33rem 0.33rem 0.33rem 0.66rem;
+  }
+  .portfolioCard__thumbnail {
+    padding: 0.33rem;
+    border-radius: 1rem;
+  }
+  .portfolioCard__more {
+    margin: 0 1rem 0.66rem 0;
+    font-size: 0.66rem;
+    position: absolute;
+  }
+  .portfolioCard__infoContainer {
+    flex-direction: column;
+    padding: 0.33rem 0.33rem 0.33rem 0.66rem;
+    overflow-y: scroll;
+    justify-content: space-between;
+  }
+  .infoContainer__title {
+    font-size: 1.5rem;
+  }
+  .infoContainer__decription {
+    font-size: 0.6rem;
+    line-height: 1rem;
+  }
+  .infoContainer__stackUsed {
+    margin-top: 0.33rem;
+    font-size: 1rem;
+  }
+
+  .stackUsed__stackItem {
+    background-color: rgba(0, 0, 0, 0.363);
+    margin: 0 0.1rem;
+    padding: 0.33rem;
+
+    border-radius: 0.33rem;
+  }
+  .infoContainer__right {
+    font-size: 2rem;
+    flex-direction: row;
   }
 }

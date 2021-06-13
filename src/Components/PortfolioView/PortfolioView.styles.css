@@ -12,17 +12,20 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 50vw;
+  width: 900px;
   margin: 0 auto;
 }
 
 @media (max-width: 1280px) {
-  /* .portfolioView__items {
-    margin: 0 5rem;
-  } */
+  .portfolioView__items {
+    width: 600px;
+  }
 }
 
 @media (max-width: 960px) {
+  .portfolioView {
+    justify-content: center;
+  }
   .portfolioView__items {
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
@@ -31,6 +34,6 @@
 
 @media (max-width: 650px) {
   .portfolioView__items {
-    margin: 0 1rem;
+    width: 90%;
   }
 }

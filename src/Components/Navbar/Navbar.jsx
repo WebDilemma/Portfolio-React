@@ -25,7 +25,9 @@ const Navbar = () => {
   return (
     <nav ref={navRef} className="navbar">
       <div className="navbar__logoContainer">
-        <img id="logoImg" className="navbar__logoImg" src={Logo} alt="logo" />
+        <a href="/">
+          <img id="logoImg" className="navbar__logoImg" src={Logo} alt="logo" />
+        </a>
       </div>
       <div className="navbar__burgerBtn" onClick={handleNavbar}>
         <i className={showNav ? "fas fa-times" : "fas fa-bars"}></i>
