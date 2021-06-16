@@ -11,6 +11,10 @@ body {
 }
 
 .portfolioPage__projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
   position: relative;
   scroll-snap-align: start;
   scroll-snap-stop: always;
@@ -45,6 +49,12 @@ body {
   z-index: 2;
 }
 
+.swipe__right {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
 @media (max-width: 1280px) {
 }
 
@@ -52,4 +62,7 @@ body {
 }
 
 @media (max-width: 650px) {
+  .portfolioPage__items {
+    width: 90%;
+  }
 }

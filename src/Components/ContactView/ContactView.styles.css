@@ -14,8 +14,9 @@
   bottom: 0;
   left: 0;
   font-size: 2rem;
-  scroll-snap-align: end;
-  padding: 0 0 2rem 4rem;
+  /* scroll-snap-align: start;
+  scroll-snap-stop: always; */
+  padding: 0 0 0rem 4rem;
   font-family: "Fira code";
   color: #00ffd1;
 }
@@ -34,6 +35,6 @@
     justify-content: center;
     width: 100%;
     padding: 0;
-    padding-bottom: 3rem;
+    /* padding-bottom: 3rem; */
   }
 }

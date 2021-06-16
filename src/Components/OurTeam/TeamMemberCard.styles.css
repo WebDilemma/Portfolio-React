@@ -11,10 +11,14 @@
   padding: 1rem;
   margin: 1rem;
   background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(42px);
+  transition: all 0.3s ease;
   border-radius: 1rem;
   width: 80%;
   display: flex;
+}
+
+.teamMemberCard__container:hover {
+  box-shadow: -3px 3px 30px rgba(0, 0, 0, 0.548);
 }
 
 .teamMemberCard__imgContainer {

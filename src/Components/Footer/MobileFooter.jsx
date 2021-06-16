@@ -1,16 +1,21 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import './MobileFooter.styles.css';
+import React from "react";
+import { Link } from "react-router-dom";
+import "./MobileFooter.styles.css";
 
 const MobileFooter = () => {
   return (
     <div className="mobileFooter">
       <div className="mobileFooter__follow">Follow web dilemma</div>
       <div className="mobileFooter__socialLinks">
-        <a rel="noreferrer" target="_blank" href="https://github.com/WebDilemma">
-          <i class="fa fa-github-square" aria-hidden="true"></i>
-        </a>       <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-        <i class="fa fa-instagram" aria-hidden="true"></i>
+        <a
+          rel="noreferrer"
+          target="_blank"
+          href="https://github.com/WebDilemma"
+        >
+          <i className="fa fa-github-square" aria-hidden="true"></i>
+        </a>
+        <i className="fa fa-linkedin-square" aria-hidden="true"></i>
+        <i className="fa fa-instagram" aria-hidden="true"></i>
         <a href="mailto:abc@example.com">
           <i className="fa fa-envelope" aria-hidden="true"></i>
         </a>
@@ -20,7 +25,9 @@ const MobileFooter = () => {
         <p>Terms & Conditon</p>
         <p>Policy</p>
       </div>
-      <div className="mobileFooter__credits"> //2021 web dilemma All rights reserved</div>
+      <div className="mobileFooter__credits">
+        &#47;&#47; 2021 Web Dilemma All rights reserved
+      </div>
     </div>
   );
 };

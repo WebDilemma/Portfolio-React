@@ -1,11 +1,12 @@
 .planets__wrapper {
   position: relative;
   max-width: 100vw;
+  height: 100vh;
   overflow-x: hidden;
 }
 
 #circle__blue {
-  position: fixed;
+  position: absolute;
   width: 676px;
   height: 676px;
   left: -10%;
@@ -17,12 +18,11 @@
     #df09ca 61.22%
   );
   transform: rotate(30deg);
-  z-index: -1;
 }
 
 #circle__gold {
   z-index: -1;
-  position: fixed;
+  position: absolute;
   width: 182px;
   height: 182px;
   /* top: 92%; */
@@ -37,8 +37,7 @@
 }
 
 #circle__pink {
-  z-index: -1;
-  position: fixed;
+  position: absolute;
   width: 280px;
   height: 280px;
   right: -3%;
@@ -53,8 +52,7 @@
 }
 
 #circle__green {
-  z-index: -1;
-  position: fixed;
+  position: absolute;
   width: 300px;
   height: 300px;
   left: 57.5%;

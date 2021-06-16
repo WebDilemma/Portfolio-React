@@ -10,10 +10,9 @@ const PortfolioCard = (props) => {
     githubRepoLink,
     liveDemoLink,
   } = props;
-  console.log(stacks);
   const [showInfo, setShowInfo] = useState(false);
   return (
-    <div className="portfolioCard">
+    <div className="portfolioCard" onClick={() => setShowInfo(!showInfo)}>
       <div className="portfolioCard__container">
         <div className="portfolioCard__thumbnailContainer">
           <img
@@ -40,7 +39,8 @@ const PortfolioCard = (props) => {
                 <div className="infoContainer__title">{name}</div>
                 <div className="infoContainer__decription">{description}</div>
                 <div className="infoContainer__stackUsed">
-                  <span>Stack:</span>
+                  <div>Stack:</div>
+
                   {stacks.map((stack) => (
                     <span key={stack} className="stackUsed__stackItem">
                       {stack}
@@ -51,24 +51,18 @@ const PortfolioCard = (props) => {
               <div className="infoContainer__right">
                 {githubRepoLink && (
                   <a href={githubRepoLink}>
-                    <i class="fa fa-github" aria-hidden="true"></i>
+                    <i className="fa fa-github" aria-hidden="true"></i>
                   </a>
                 )}
                 {liveDemoLink && (
                   <a href={liveDemoLink}>
-                    <i class="fa fa-globe" aria-hidden="true"></i>
+                    <i className="fa fa-globe" aria-hidden="true"></i>
                   </a>
                 )}
               </div>
             </div>
           </div>
         )}
-        <span
-          className="portfolioCard__more"
-          onClick={() => setShowInfo(!showInfo)}
-        >
-          <i class={showInfo ? "fas fa-chevron-down" : "fas fa-chevron-up"}></i>
-        </span>
       </div>
     </div>
   );

@@ -6,17 +6,23 @@ import Data from "../../Data/PortfolioData";
 import Footer from "../../Components/Footer/Footer";
 import TechSkills from "../../Components/TechSkills/TechSkills";
 import Planets from "../../Components/Planets/Planets";
+
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
+
 const PortfolioPage = () => {
   // const [showMore, setShowMore] = useState(false);
   return (
     <div className="portfolioPage">
-      <Planets />
       <section className="portfolioPage__projects">
         <Title name="Portfolio" />
         <div className="portfolioPage__items">
-          <Carousel infiniteLoop>
+          <Carousel
+            interval={10000}
+            showThumbs={false}
+            stopOnHover={true}
+            infiniteLoop
+          >
             {Data.map((item, index) => (
               <PortfolioCard
                 key={index}
@@ -29,7 +35,6 @@ const PortfolioPage = () => {
               />
             ))}
           </Carousel>
-          {/* <div className="items__moreBtn">Swipe to see more <i class="fas fa-chevron-right"></i></div> */}
         </div>
       </section>
       <TechSkills />

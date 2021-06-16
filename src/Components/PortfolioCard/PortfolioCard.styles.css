@@ -2,9 +2,10 @@
   flex: 0 0 33.3333%;
   scroll-snap-align: center;
   scroll-snap-stop: always;
-  margin: 0 4rem 4rem 4rem;
+  /* margin: 0 4rem 4rem 4rem; */
   font-family: "Poppins";
   z-index: 10;
+  cursor: pointer;
 }
 
 .portfolioCard__container {
@@ -16,9 +17,9 @@
 
 .portfolioCard__thumbnail {
   transition: all 0.3s ease-out;
-  padding: 1rem;
+  /* padding: 1rem; */
   opacity: 0.8;
-  border-radius: 2rem;
+  border-radius: 1rem;
 }
 
 .portfolioCard__thumbnail.active {
@@ -47,7 +48,9 @@
 
 .portfolioCard__more {
   position: fixed;
-  right: 0;
+  /* right: 0; */
+  left: 50%;
+  transform: translateX(-50%);
   bottom: 0;
   margin: 0 3rem 2rem 0;
   cursor: pointer;
@@ -67,6 +70,7 @@
   padding: 1rem 1rem 1rem 2rem;
   height: 100%;
   display: flex;
+  overflow-y: scroll;
 }
 
 .infoContainer__left {
@@ -143,7 +147,6 @@
 
 @media (max-width: 1280px) {
   .portfolioCard {
-    margin: 2.5rem;
     margin-top: 0;
   }
   .portfolioCard__title {
@@ -155,8 +158,8 @@
     border-radius: 1rem;
   }
   .portfolioCard__thumbnail {
-    padding: 0.66rem;
-    border-radius: 1.33rem;
+    /* padding: 0.66rem; */
+    border-radius: 1rem;
   }
   .portfolioCard__more {
     margin: 0 2rem 1rem 0;
@@ -199,7 +202,7 @@
     padding: 0.33rem 0.33rem 0.33rem 0.66rem;
   }
   .portfolioCard__thumbnail {
-    padding: 0.33rem;
+    /* padding: 0.33rem; */
     border-radius: 1rem;
   }
   .portfolioCard__more {

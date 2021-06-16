@@ -1,4 +1,4 @@
-import om from "../Assets/ProfilePics/om.webp";
+import om from "../Assets/ProfilePics/om (2).webp";
 import deep from "../Assets/ProfilePics/deep.webp";
 import parth from "../Assets/ProfilePics/parth.webp";
 import vansh from "../Assets/ProfilePics/vansh.webp";

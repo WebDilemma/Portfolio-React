@@ -11,7 +11,12 @@ const PortfolioView = () => {
     <section className="portfolioView" id="portfolio">
       <Title name="Latest Projects" />
       <div className="portfolioView__items">
-        <Carousel infiniteLoop>
+        <Carousel
+          showThumbs={false}
+          autoPlay={false}
+          stopOnHover={true}
+          infiniteLoop
+        >
           {Data.slice(0, 3).map((item, index) => (
             <PortfolioCard
               key={index}
