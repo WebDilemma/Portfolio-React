@@ -7,6 +7,7 @@ import axios from "axios";
 
 const OurTeam = () => {
   const [teamData, setTeamData] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   const url = "https://webdilemma4.herokuapp.com/api/team/list/";
 
@@ -14,12 +15,17 @@ const OurTeam = () => {
     axios.get(url).then((res) => {
       setTeamData(res.data);
       console.log(teamData);
+      setLoading(false);
     });
   };
 
   useEffect(() => {
     return fetchTeam();
   }, []);
+
+  if (loading) {
+    return <p>Loading...</p>;
+  }
 
   return (
     <section className="ourTeam">

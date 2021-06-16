@@ -63,6 +63,16 @@ const PortfolioCard = (props) => {
             </div>
           </div>
         )}
+        <div className="showInfo__btn">
+          <i
+            className={
+              showInfo
+                ? "fas fa-chevron-circle-down"
+                : "fas fa-chevron-circle-up"
+            }
+            aria-hidden="true"
+          ></i>
+        </div>
       </div>
     </div>
   );
