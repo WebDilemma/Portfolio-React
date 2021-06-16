@@ -9,6 +9,7 @@ body {
   height: 100vh;
   position: relative;
   scroll-snap-type: y mandatory;
+  overflow-x: hidden;
 }
 
 .homepage__home {

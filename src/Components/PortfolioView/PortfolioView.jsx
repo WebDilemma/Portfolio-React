@@ -16,6 +16,7 @@ const PortfolioView = () => {
           autoPlay={false}
           stopOnHover={true}
           infiniteLoop
+          interval={10000}
         >
           {Data.slice(0, 3).map((item, index) => (
             <PortfolioCard

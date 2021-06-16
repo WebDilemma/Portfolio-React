@@ -2,7 +2,6 @@
   flex: 0 0 33.3333%;
   scroll-snap-align: center;
   scroll-snap-stop: always;
-  /* margin: 0 4rem 4rem 4rem; */
   font-family: "Poppins";
   z-index: 10;
   cursor: pointer;
@@ -16,15 +15,15 @@
 }
 
 .portfolioCard__thumbnail {
-  transition: all 0.3s ease-out;
-  /* padding: 1rem; */
+  transition: all 0.2s ease-out;
   opacity: 0.8;
   border-radius: 1rem;
 }
 
 .portfolioCard__thumbnail.active {
-  transition: all 0.3s ease;
+  transition: all 0.2s ease-in-out;
   transform: translateY(-100%);
+  /* opacity: 0.01; */
 }
 
 .portfolioCard__title {
@@ -32,29 +31,19 @@
   position: absolute;
   top: 0;
   left: 0;
-  padding: 1rem 1rem 1rem 2rem;
-  font-size: 8rem;
-  line-height: 8rem;
+  padding: 1rem;
+  font-size: 6rem;
+  line-height: 6rem;
   font-weight: 400;
-  transition: all 0.3s ease-in;
+  transition: all 0.2s ease-in;
   font-family: "Poppins";
   text-align: left;
-  animation: shrinkOut 0.3s;
+  /* animation: shrinkOut 0.3s; */
 }
 
 .portfolioCard__title.active {
   display: none;
-}
-
-.portfolioCard__more {
-  position: fixed;
-  /* right: 0; */
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 0;
-  margin: 0 3rem 2rem 0;
-  cursor: pointer;
-  font-size: 2rem;
+  /* transform: translateY(-100%); */
 }
 
 .portfolioCard__info {
@@ -81,11 +70,11 @@
 .infoContainer__right {
   display: flex;
   flex-direction: column;
-  font-size: 4rem;
 }
 
 .infoContainer__right .fa-github,
 .infoContainer__right .fa-globe {
+  font-size: 4rem;
   padding: 0.5rem;
   opacity: 0.6;
 }
@@ -96,12 +85,14 @@
 }
 
 .infoContainer__title {
+  /* display: none; */
+  /* position: relative;
   top: 0;
-  left: 0;
-  font-size: 4rem;
+  left: 0; */
+  font-size: 2rem;
   font-weight: 400;
-  transition: all 0.3s ease-out;
-  animation: 0.3s shrinkIn;
+  /* transition: all 0.3s ease-out; */
+  /* animation: 0.3s shrinkIn; */
 }
 
 .infoContainer__decription {
@@ -115,7 +106,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin-top: 1rem;
+  padding: 1rem 0 4rem 0;
   font-size: 2rem;
 }
 
@@ -129,7 +120,6 @@
 
 .showInfo__btn {
   font-size: 2rem;
-
   transition: all 0.3s ease-in;
   position: absolute;
   bottom: 0;
@@ -137,7 +127,7 @@
   padding: 1rem 2rem 1rem 1rem;
 }
 
-/* @keyframes shrinkIn {
+@keyframes shrinkIn {
   0% {
     transform: scale(50%);
   }
@@ -148,105 +138,22 @@
 
 @keyframes shrinkOut {
   0% {
-    transform: scale(100%);
+    transform: scale(50%);
   }
   100% {
     transform: scale(100%);
   }
-} */
-
-@media (max-width: 1280px) {
-  .portfolioCard {
-    margin-top: 0;
-  }
-  .portfolioCard__title {
-    font-size: 5rem;
-    line-height: 5rem;
-    padding: 0.66rem 0.66rem 0.66rem 1.3rem;
-  }
-  .portfolioCard__container {
-    border-radius: 1rem;
-  }
-  .portfolioCard__thumbnail {
-    /* padding: 0.66rem; */
-    border-radius: 1rem;
-  }
-  .portfolioCard__more {
-    margin: 0 2rem 1rem 0;
-    font-size: 1.33rem;
-  }
-  .portfolioCard__infoContainer {
-    padding: 0.66rem 0.66rem 0.66rem 1.33rem;
-  }
-  .infoContainer__title {
-    font-size: 2.64rem;
-  }
-  .infoContainer__decription {
-    font-size: 0.8rem;
-  }
-  .infoContainer__stackUsed {
-    margin-top: 0.66rem;
-    font-size: 1.3rem;
-  }
-
-  .stackUsed__stackItem {
-    font-size: 0.66rem;
-    background-color: rgba(0, 0, 0, 0.363);
-    margin: 0 0.2rem;
-    padding: 0.33rem;
-    border-radius: 0.33rem;
-  }
-  .infoContainer__right {
-    font-size: 2.5rem;
-  }
 }
 
 @media (max-width: 650px) {
-  .portfolioCard {
-    margin: 0;
-    margin-bottom: 2rem;
-  }
-  .portfolioCard__title {
-    font-size: 2.5rem;
-    line-height: 2.5rem;
-    padding: 0.33rem 0.33rem 0.33rem 0.66rem;
-  }
-  .portfolioCard__thumbnail {
-    /* padding: 0.33rem; */
-    border-radius: 1rem;
-  }
-  .portfolioCard__more {
-    margin: 0 1rem 0.66rem 0;
-    font-size: 0.66rem;
-    position: absolute;
-  }
   .portfolioCard__infoContainer {
-    flex-direction: column;
-    padding: 0.33rem 0.33rem 0.33rem 0.66rem;
+    /* flex-direction: column; */
+    /* padding: 0.33rem 0.33rem 0.33rem 0.66rem; */
     overflow-y: scroll;
     justify-content: space-between;
   }
-  .infoContainer__title {
-    font-size: 1.5rem;
-  }
-  .infoContainer__decription {
-    font-size: 0.6rem;
-    line-height: 1rem;
-  }
-  .infoContainer__stackUsed {
-    margin-top: 0.33rem;
-    font-size: 1rem;
-  }
 
-  .stackUsed__stackItem {
-    background-color: rgba(0, 0, 0, 0.363);
-    margin: 0 0.1rem;
-    padding: 0.33rem;
-
-    border-radius: 0.33rem;
-  }
   .infoContainer__right {
-    font-size: 2rem;
-    flex-direction: row;
+    /* flex-direction: row; */
   }
 }

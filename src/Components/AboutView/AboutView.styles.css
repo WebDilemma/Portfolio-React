@@ -54,7 +54,7 @@
   font-family: Roboto;
   font-weight: 500;
   font-size: 2.5rem;
-  line-height: 42px;
+  line-height: 3rem;
   margin-bottom: 2rem;
 }
 
@@ -96,27 +96,10 @@
   backdrop-filter: blur(42px);
 }
 
-/* =============== 1440px display ============================= */
 @media (max-width: 1280px) {
-  .info__title {
-    font-size: 1rem;
-    margin-bottom: 1rem;
-  }
-  .info__headline {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-  .info__description {
-    font-size: 0.8rem;
-    line-height: 1.2rem;
-  }
   .about__infoImg__container img {
     object-fit: contain;
     width: 400px;
-  }
-  .about__infoImg--bg {
-    bottom: -10px;
-    right: -10px;
   }
 }
 
@@ -165,30 +148,9 @@
     height: auto;
   }
   .about__infoText {
-    margin: 0;
+    /* margin: 0; */
   }
   .about__seeMore {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 650px) {
-  .about__container {
-    margin: 0 2rem;
-  }
-  .about__infoContainer {
-    padding: 0;
-  }
-
-  .info__headline {
-    width: 100%;
-    font-size: 1.2rem;
-    font-weight: 500;
-    line-height: 1.5rem;
-  }
-  .info__description {
-    font-size: 0.8rem;
-    font-weight: 200;
-    line-height: 1rem;
+    /* font-size: 1rem; */
   }
 }

@@ -72,25 +72,13 @@
   top: 0;
   right: 0;
   margin: 30px;
-  font-size: 1.8rem;
+  font-size: 2rem;
   cursor: pointer;
   z-index: 2;
-}
-
-@media (max-width: 1280px) {
-  .navbar__nav li {
-    font-size: 3rem;
-    padding: 1rem 0;
-  }
 }
 
 @media (max-width: 650px) {
   .navbar__logoImg {
     height: 80px;
-  }
-
-  .navbar__nav li {
-    font-size: 1.66rem;
-    padding: 0.5rem 0;
   }
 }

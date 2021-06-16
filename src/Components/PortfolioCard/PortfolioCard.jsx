@@ -36,7 +36,7 @@ const PortfolioCard = (props) => {
           <div className="portfolioCard__info">
             <div className="portfolioCard__infoContainer">
               <div className="infoContainer__left">
-                <div className="infoContainer__title">{name}</div>
+                <div className="infoContainer__title">Description:</div>
                 <div className="infoContainer__decription">{description}</div>
                 <div className="infoContainer__stackUsed">
                   <div>Stack:</div>

@@ -41,21 +41,13 @@
 }
 
 @media (max-width: 1280px) {
-  .home__headline {
-    font-size: 6rem;
-  }
   .home__scroll {
     top: 410px;
-    font-size: 1.3rem;
     padding-right: 15vw;
   }
 }
 
 @media (max-width: 650px) {
-  .home__headline {
-    font-size: 5rem;
-    width: 100px;
-  }
   .home__scroll {
     width: 100%;
     position: absolute;

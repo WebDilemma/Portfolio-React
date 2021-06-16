@@ -9,7 +9,6 @@
   padding: 1rem 0 3rem 0;
   scroll-snap-align: start;
   scroll-snap-stop: always;
-  /* height: 200px; */
 }
 
 .mobileFooter__follow {
@@ -19,7 +18,7 @@
 .mobileFooter__socialLinks .fa {
   margin: 10px;
   margin-bottom: 5px;
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 
 .mobileFooter__policy {
@@ -33,6 +32,6 @@
 }
 
 .mobileFooter__credits {
-  font-size: 0.8rem;
+  font-size: 1rem;
   margin: 5px 0;
 }

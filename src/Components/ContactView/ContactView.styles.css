@@ -14,18 +14,16 @@
   bottom: 0;
   left: 0;
   font-size: 2rem;
-  /* scroll-snap-align: start;
-  scroll-snap-stop: always; */
   padding: 0 0 2rem 4rem;
   font-family: "Fira code";
   color: #00ffd1;
 }
 
 @media (max-width: 1280px) {
-  .contactView__email {
+  /* .contactView__email {
     font-size: 1.2rem;
     padding: 0 0 1.2rem 2rem;
-  }
+  } */
 }
 
 @media (max-width: 650px) {
@@ -35,6 +33,6 @@
     justify-content: center;
     width: 100%;
     padding: 0;
-    /* padding-bottom: 3rem; */
+    padding-bottom: 3rem;
   }
 }

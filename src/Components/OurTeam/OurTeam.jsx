@@ -3,7 +3,7 @@ import Title from "../Title/Title";
 import TeamMemberCard from "./TeamMemberCard";
 import "./OurTeam.styles.css";
 import axios from "axios";
-// import TeamMembers from "../../Data/TeamMembers";
+import TeamMembers from "../../Data/TeamMembers";
 
 const OurTeam = () => {
   const [teamData, setTeamData] = useState([]);
@@ -20,29 +20,35 @@ const OurTeam = () => {
   };
 
   useEffect(() => {
-    return fetchTeam();
+    // fetchTeam();
   }, []);
-
-  if (loading) {
-    return <p>Loading...</p>;
-  }
 
   return (
     <section className="ourTeam">
       <Title name="Our Team" />
       <div className="ourTeam__members">
-        {teamData.map((member, index) => (
+        {TeamMembers.map((member, index) => (
           <TeamMemberCard
+            // key={index}
+            // name={member.name}
+            // profilePic={member.user.img}
+            // jobTitle={member.job_title}
+            // expertise={member.expertise}
+            // twitterLink={member.user.twitter_handle}
+            // websiteLink={member.user.website_link}
+            // githubLink={member.user.github_link}
+            // instagramLink={member.user.instagram_profile_link}
+            // linkedinLink={member.user.linked_in_link}
             key={index}
             name={member.name}
-            profilePic={member.user.img}
-            jobTitle={member.job_title}
+            profilePic={member.profilePic}
+            jobTitle={member.jobTitle}
             expertise={member.expertise}
-            twitterLink={member.user.twitter_handle}
-            websiteLink={member.user.websiteLink}
-            githubLink={member.user.github_link}
-            instagramLink={member.user.instagram_profile_link}
-            linkedinLink={member.user.linked_in_link}
+            twitterLink={member.twitterLink}
+            websiteLink={member.websiteLink}
+            githubLink={member.githubLink}
+            instagramLink={member.instagramLink}
+            linkedinLink={member.linkedinLink}
           />
         ))}
       </div>

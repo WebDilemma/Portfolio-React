@@ -2,12 +2,29 @@ import om from "../Assets/ProfilePics/om (2).webp";
 import deep from "../Assets/ProfilePics/deep.webp";
 import parth from "../Assets/ProfilePics/parth.webp";
 import vansh from "../Assets/ProfilePics/vansh.webp";
+import { ExpertInTech, LearningTech } from "./TechSkills";
+
+import bootstrap from "../Assets/TechLogo/bootstrap.svg";
+import css3 from "../Assets/TechLogo/css3.svg";
+import figma from "../Assets/TechLogo/figma.svg";
+import git from "../Assets/TechLogo/git.svg";
+import html5 from "../Assets/TechLogo/html5.svg";
+import js from "../Assets/TechLogo/js.svg";
+import mongodb from "../Assets/TechLogo/mongodb.svg";
+import nodejs from "../Assets/TechLogo/nodejs.svg";
+import react from "../Assets/TechLogo/react.svg";
+import sass from "../Assets/TechLogo/sass.svg";
+import sql from "../Assets/TechLogo/sql.svg";
+import typescript from "../Assets/TechLogo/typescript.svg";
+import laravel from "../Assets/TechLogo/laravel.svg";
+import django from "../Assets/TechLogo/django.svg";
+import php from "../Assets/TechLogo/php.svg";
 
 const TeamMember = [
   {
     name: "Om Raval",
     jobTitle: "UI/UX",
-    expertise: "",
+    expertise: [html5, react, figma],
     profilePic: om,
     githubLink: "https://github.com/omraval18",
     twitterLink: "https://twitter.com/om_raval18",
@@ -18,8 +35,8 @@ const TeamMember = [
   {
     name: "Deep Makadiya",
     jobTitle: "Frontend Developer",
-    expertise: "React",
     profilePic: deep,
+    expertise: [html5, css3, js, react],
     githubLink: "https://github.com/mac-deep",
     twitterLink: "https://twitter.com/mac_deeep",
     websiteLink: "https://deepmakadiya.netlify.app/",
@@ -29,8 +46,8 @@ const TeamMember = [
   {
     name: "Parth Thakar",
     jobTitle: "Backend Developer",
-    expertise: "Django",
     profilePic: parth,
+    expertise: [html5, django, sql, bootstrap],
     githubLink: "https://github.com/parthishere",
     twitterLink: "https://twitter.com/parththakkar74",
     websiteLink: "https://stormy-hamlet-70851.herokuapp.com/",
@@ -40,8 +57,8 @@ const TeamMember = [
   {
     name: "Vansh Prajapati",
     jobTitle: "Backend Developer",
-    expertise: "Laravel",
     profilePic: vansh,
+    expertise: [html5, php, laravel],
     githubLink: "https://github.com/VickyThawne",
     twitterLink: "",
     websiteLink: "",

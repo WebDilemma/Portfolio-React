@@ -5,10 +5,7 @@
 }
 
 .techCard__container {
-  /* padding: 1rem; */
   margin: 1rem;
-  /* width: 80%; */
-  /* background-color: blue; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,25 +24,13 @@
 }
 
 @media (max-width: 1280px) {
-  .techCard__container {
-    margin: 0.66rem;
-  }
   .techCard__logo {
     height: 66px;
-  }
-  .techCard__container p {
-    font-size: 1rem;
   }
 }
 
 @media (max-width: 960px) {
-  .techCard__container {
-    margin: 0.5rem;
-  }
   .techCard__logo {
     height: 50px;
-  }
-  .techCard__container p {
-    font-size: 0.6rem;
   }
 }
