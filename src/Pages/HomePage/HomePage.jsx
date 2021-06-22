@@ -2,7 +2,6 @@ import React from "react";
 import "./HomePage.styles.css";
 import Home from "../../Components/Home/Home";
 import PortfolioView from "../../Components/PortfolioView/PortfolioView";
-// import TemplateView from '../../Components/TemplateView/TemplateView';
 import AboutView from "../../Components/AboutView/AboutView";
 import ContactView from "../../Components/ContactView/ContactView";
 import Footer from "../../Components/Footer/Footer";

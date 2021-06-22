@@ -1,11 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import PortfolioCard from "../../Components/PortfolioCard/PortfolioCard";
 import Title from "../../Components/Title/Title";
 import "./PortfolioPage.styles.css";
 import Data from "../../Data/PortfolioData";
 import Footer from "../../Components/Footer/Footer";
 import TechSkills from "../../Components/TechSkills/TechSkills";
-import Planets from "../../Components/Planets/Planets";
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";

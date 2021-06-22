@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import "./Navbar.styles.css";
 import Logo from "../../Assets/wd_logo_nav.png";
 import { Link } from "react-router-dom";
@@ -6,17 +6,6 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   const navRef = useRef();
   const [showNav, setShowNav] = useState(false);
-  // const navScroll = () => {
-  //   const navbar = navRef;
-  //   let value = window.scrollY;
-  //   if (window.innerWidth < 960) return;
-  //   // navbar.current.style.transform = `translateX(${value * -0.01}px)`;
-  // };
-
-  // useEffect(() => {
-  //   window.addEventListener('scroll', navScroll);
-  //   return () => window.removeEventListener('scroll', navScroll);
-  // });
 
   const handleNavbar = () => {
     setShowNav(!showNav);

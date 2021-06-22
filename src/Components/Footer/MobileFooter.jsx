@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./MobileFooter.styles.css";
 
 const MobileFooter = () => {
@@ -21,7 +20,9 @@ const MobileFooter = () => {
         </a>
       </div>
       <div className="mobileFooter__policy">
-        <p>about</p>
+        <p>
+          <a href="/about">about</a>
+        </p>
         <p>Terms & Conditon</p>
         <p>Policy</p>
       </div>

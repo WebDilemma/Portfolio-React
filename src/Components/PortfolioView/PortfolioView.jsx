@@ -1,6 +1,5 @@
 import React from "react";
 import PortfolioCard from "../PortfolioCard/PortfolioCard";
-import ShowMoreBtn from "../ShowMoreBtn/ShowMoreBtn";
 import Title from "../Title/Title";
 import "./PortfolioView.styles.css";
 import Data from "../../Data/PortfolioData";

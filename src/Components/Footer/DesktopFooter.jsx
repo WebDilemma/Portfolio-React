@@ -1,7 +1,7 @@
-import React from 'react';
-import './DesktopFooter.styles.css';
-import Logo from '../../Assets/wd_logo.png';
-import { Link } from 'react-router-dom';
+import React from "react";
+import "./DesktopFooter.styles.css";
+import Logo from "../../Assets/wd_logo.png";
+import { Link } from "react-router-dom";
 
 const DesktopFooter = () => {
   return (
@@ -20,7 +20,9 @@ const DesktopFooter = () => {
           <li>
             <Link to="/portfolio">Portfolio</Link>
           </li>
-          <li>Templates</li>
+          <li>
+            <Link to="/about">About</Link>
+          </li>
           <li>
             <Link to="/contact">Contact</Link>
           </li>
@@ -46,8 +48,12 @@ const DesktopFooter = () => {
         </ul>
       </div>
       <div className="footer__address">
-        <i className="fa fa-map-marker" style={{ color: 'red' }} aria-hidden="true"></i> L.D College of Engineering,
-        Navarangpura, Ahmedabad- Gujarat.
+        <i
+          className="fa fa-map-marker"
+          style={{ color: "red" }}
+          aria-hidden="true"
+        ></i>{" "}
+        L.D College of Engineering, Navarangpura, Ahmedabad- Gujarat.
       </div>
       <div className="footer__talkBtn">
         <Link to="/contact">

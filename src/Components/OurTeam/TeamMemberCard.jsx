@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link, Redirect } from "react-router-dom";
 import "./TeamMemberCard.styles.css";
 
 const TeamMemberCard = ({
@@ -12,6 +11,7 @@ const TeamMemberCard = ({
   githubLink,
   websiteLink,
   instagramLink,
+  bio,
 }) => {
   const [moreInfo, setMoreInfo] = useState(false);
   return (
@@ -50,12 +50,8 @@ const TeamMemberCard = ({
           <div className="teamMemberCard__face2">
             <div className="teamMemberCard__infoContainer">
               <div className="teamMemberCard__bio">
-                <div className="teamMemberCard__bioTitle">Bio</div>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Rerum, ipsam natus maxime repudiandae asperiores laborum modi
-                  ducimus dolore voluptate, autem vitae!
-                </p>
+                {/* <div className="teamMemberCard__bioTitle">Bio</div> */}
+                <p>{bio}</p>
               </div>
               <div className="teamMemberCard__expertise">
                 <p>Expertise:</p>
@@ -102,7 +98,7 @@ const TeamMemberCard = ({
         )}
         <div className="showMore__btn">
           <i
-            class={
+            className={
               moreInfo
                 ? "fas fa-chevron-circle-down"
                 : "fas fa-chevron-circle-up"
