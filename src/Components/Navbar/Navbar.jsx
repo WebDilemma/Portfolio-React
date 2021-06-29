@@ -1,20 +1,29 @@
 import React, { useRef, useState } from "react";
 import "./Navbar.styles.css";
 import Logo from "../../Assets/wd_logo_nav.png";
-import { Link } from "react-router-dom";
+import { Link, withRouter } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = ({ history }) => {
   const navRef = useRef();
   const [showNav, setShowNav] = useState(false);
 
   const handleNavbar = () => {
     setShowNav(!showNav);
   };
+  console.log(history);
+
+  const currentTab = (history, path) => {
+    if (history.location.pathname === path) {
+      return { color: "#2ecc72" };
+    } else {
+      return { color: "#fff" };
+    }
+  };
 
   return (
     <nav ref={navRef} className="navbar">
       <div className="navbar__logoContainer">
-        <a href="/">
+        <a href="/" style={currentTab(history, "/")}>
           <img id="logoImg" className="navbar__logoImg" src={Logo} alt="logo" />
         </a>
       </div>
@@ -23,18 +32,27 @@ const Navbar = () => {
       </div>
 
       <ul className={showNav ? "navbar__nav active" : "navbar__nav"}>
-        <Link to="/" onClick={handleNavbar}>
+        <Link to="/" style={currentTab(history, "/")} onClick={handleNavbar}>
           <li>Home</li>
         </Link>
-        <Link to="/portfolio" onClick={handleNavbar}>
+        <Link
+          to="/portfolio"
+          style={currentTab(history, "/portfolio")}
+          onClick={handleNavbar}
+        >
           <li>Portfolio</li>
         </Link>
 
-        <Link to="/about" onClick={handleNavbar}>
+        <Link
+          to="/about"
+          style={currentTab(history, "/about")}
+          onClick={handleNavbar}
+        >
           <li>about</li>
         </Link>
         <Link
           className="navbar__specialCase"
+          style={currentTab(history, "/contact")}
           to="/contact"
           onClick={handleNavbar}
         >
@@ -45,4 +63,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default withRouter(Navbar);
