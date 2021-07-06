@@ -43,6 +43,8 @@
 
 .about__seeMoreLine {
   border-bottom: 2px solid #00ff94;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
 }
 
 .info__title {
@@ -68,9 +70,11 @@
 }
 
 .info__description {
-  font-family: Poppins;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 1.2rem;
-  font-weight: 300;
+  font-weight: 200;
+  line-height: 26px;
 }
 
 .about__infoText:last-of-type {

@@ -23,7 +23,6 @@
 .home__headline p {
   background: linear-gradient(to right, rgb(176, 172, 224), rgb(238, 224, 251));
   -webkit-text-fill-color: transparent;
-
   -webkit-background-clip: text;
 }
 
