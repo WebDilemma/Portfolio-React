@@ -1,16 +1,16 @@
 import React from "react";
-import ContactForm from "../ContactForm/ContactForm";
+import ContactForm from "../ContactForm_2/ContactForm";
 import Title from "../Title/Title";
 import "./ContactView.styles.css";
 
 const ContactView = () => {
   return (
     <section className="contactView">
-      <Title name="contact" />
+      {/* <Title name="contact" /> */}
       <ContactForm />
-      <div className="contactView__email">
+      {/* <div className="contactView__email">
         <p>contact@webdilemma.com</p>
-      </div>
+      </div> */}
     </section>
   );
 };

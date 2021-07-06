@@ -35,9 +35,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  text-decoration: underline;
 
   font-size: 1.5rem;
+}
+
+.about__seeMoreLine {
+  border-bottom: 2px solid #00ff94;
 }
 
 .info__title {
@@ -84,7 +87,7 @@
 
 .about__infoImg__container img {
   object-fit: contain;
-  width: 600px;
+  width: 550px;
 }
 
 .about__infoImg--bg {

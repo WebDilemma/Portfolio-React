@@ -14,12 +14,12 @@
 
 .techCard__logo {
   object-fit: contain;
-  height: 100px;
+  height: 60px;
 }
 
 .techCard__container p {
-  padding-top: 0.5rem;
-  font-size: 1.5rem;
+  padding-top: 0.7rem;
+  font-size: 1.2rem;
   font-family: "Fira code";
 }
 

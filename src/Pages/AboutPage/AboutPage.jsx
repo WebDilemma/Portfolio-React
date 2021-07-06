@@ -1,17 +1,18 @@
-import React, { useEffect } from "react";
-// import Iphone from "../../Components/Iphone/Iphone";
-// import IphoneX from "../../Components/Iphone/IphoneX";
-// import Macbook from "../../Components/Macbook/Macbook";
+import React, { useEffect, useState } from "react";
+import Iphone from "../../Components/Iphone/Iphone";
+import IphoneX from "../../Components/Iphone/IphoneX";
+import Macbook from "../../Components/Macbook/Macbook";
 import OurTeam from "../../Components/OurTeam/OurTeam";
 import Title from "../../Components/Title/Title";
+import Ipad from "../../Components/iPad/Ipad";
 import "./AboutPage.styles.css";
 import Footer from "../../Components/Footer/Footer";
 
 const AboutPage = () => {
-  // const [isMobile, setMobile] = useState(window.innerWidth < 960);
+  const [isMobile, setMobile] = useState(window.innerWidth < 960);
 
   const updateMedia = () => {
-    // setMobile(window.innerWidth < 960);
+    setMobile(window.innerWidth < 960);
   };
 
   useEffect(() => {
@@ -24,7 +25,7 @@ const AboutPage = () => {
       <section className="aboutpage__device">
         <Title name="about" />
         <div className="aboutpage__deviceContainer">
-          {/* {isMobile ? <IphoneX /> : <Macbook />} */}
+          {isMobile ? <IphoneX /> : <Ipad />}
         </div>
       </section>
       <OurTeam />

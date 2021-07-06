@@ -14,7 +14,7 @@ html {
 body {
   color: #fff;
   /* background-color: rgba(0, 0, 0, 0.904); */
-  background: #19191a;
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
 }
 
 a {

@@ -26,13 +26,19 @@
   height: 182px;
   /* top: 92%; */
   bottom: 0;
-  right: 5%;
+  right: 0.5%;
+  left: 93%;
   border-radius: 50%;
   background: radial-gradient(
     76.75% 76.75% at 70% 23.25%,
     #c21500 0%,
     #ffc500 100%
   );
+
+  @media (max-width: 600px) {
+    right: 1%;
+    left: 90%;
+  }
 }
 
 #circle__pink {

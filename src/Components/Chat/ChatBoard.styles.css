@@ -11,9 +11,10 @@
 #chat {
   background-image: url(../../Assets/whatsapp_wallpaper.png);
   box-sizing: border-box;
+  border: none;
   /* margin: 0 0 1em 1em; */
   position: relative;
-  height: 85%;
+  height: 165%;
   overflow-y: hidden;
 }
 #chat::before {
@@ -84,6 +85,10 @@
   align-items: center;
 }
 
+
+
+
+
 .chat__header__actionBtn__img {
   object-fit: contain;
   height: 25px;
@@ -108,8 +113,8 @@
   padding: 1em 0 2em;
   display: flex;
   flex-direction: column;
-  height: 38vh;
-  overflow-y: scroll;
+  height: 100vh;
+  overflow-y: visible;
 }
 
 /* =============================CUSTOM SCROLL==================================== */
@@ -145,7 +150,7 @@
 
 @media only screen and (max-width: 1280px) {
   #chat .chat__conversation-board {
-    height: 58vh;
+    height: 100vh;
   }
 }
 

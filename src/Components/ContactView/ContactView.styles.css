@@ -6,7 +6,8 @@
   flex-direction: column;
   justify-content: center;
   position: relative;
-  margin: 2rem;
+  align-items: center;
+  /* margin: 2rem; */
 }
 
 .contactView__email {

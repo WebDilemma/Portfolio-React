@@ -80,7 +80,9 @@ const AboutView = () => {
           </div>
         </div>
         <div className="about__seeMore">
-          <Link to="/about">See More</Link>
+          <div className="about__seeMoreLine">
+            <Link to="/about">See More</Link>
+          </div>
         </div>
       </div>
     </section>
