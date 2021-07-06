@@ -24,6 +24,7 @@ a {
 
 html {
   font-size: 16px;
+  font-family: "Fira Code", monospace;
 }
 
 @media (max-width: 1440px) {

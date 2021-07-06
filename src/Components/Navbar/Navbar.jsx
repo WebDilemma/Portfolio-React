@@ -14,7 +14,7 @@ const Navbar = ({ history }) => {
 
   const currentTab = (history, path) => {
     if (history.location.pathname === path) {
-      return { color: "#2ecc72" };
+      return { color: "#2086DF" };
     } else {
       return { color: "#fff" };
     }

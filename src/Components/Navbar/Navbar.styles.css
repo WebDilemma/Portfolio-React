@@ -39,7 +39,7 @@
 }
 
 .navbar__nav li {
-  font-family: "Roboto";
+  font-family: "Fira Code";
   text-transform: uppercase;
   padding: 1.5rem 0;
   transition: all 0.3s ease;
@@ -58,11 +58,12 @@
 }
 
 .navbar__nav.active {
-  background-color: rgba(0, 0, 0, 0.01);
+  background-color: rgb(0, 0, 0);
   backdrop-filter: blur(80px);
   top: 0;
   z-index: 1;
   height: 100vh;
+  animation: 2s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-left both;
 }
 
 .navbar__burgerBtn {
@@ -80,5 +81,14 @@
 @media (max-width: 650px) {
   .navbar__logoImg {
     height: 80px;
+  }
+}
+
+@keyframes wipe-in-left {
+  from {
+    clip-path: inset(0 0 0 100%);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
   }
 }
