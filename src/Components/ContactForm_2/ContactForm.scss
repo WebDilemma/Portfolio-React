@@ -1,4 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
+@import "../../mainSass/main";
+
 * {
   font-family: "Open Sans", sans-serif;
 }
@@ -7,6 +9,7 @@
   background-color: #0b111b;
   // background-image: url("https://source.unsplash.com/RmoWqDCqN2E/1600x800");
   background-repeat: no-repeat;
+
   position: absolute;
   top: 50%;
   left: 50%;
@@ -17,6 +20,19 @@
   display: flex;
   color: white;
   box-shadow: 3px 10px 20px 5px rgba(0, 0, 0, 0.5);
+
+  @include respond(phone) {
+    width: 400px;
+    height: 390px;
+  }
+  @include respond(midPhone) {
+    width: 80%;
+    height: 60%;
+  }
+  @include respond(smallPhone) {
+    width: 80%;
+    height: 70%;
+  }
 }
 
 .info {
@@ -24,17 +40,31 @@
   background: rgba(20, 20, 20, 0.8);
   padding: 30px 0;
   border-right: 5px solid rgba(30, 30, 30, 0.8);
+  font-size: 1.6rem;
   h2 {
     padding-top: 30px;
     font-weight: 300;
   }
   p {
-    font-size: 18px;
+    font-size: 1.4rem;
   }
   .icon {
     font-size: 8em;
     padding: 20px 0;
     color: rgb(168, 255, 255);
+  }
+
+  @include respond(big-desktop) {
+    font-size: 1.4rem;
+
+    p {
+      font-size: 1.1rem;
+    }
+  }
+
+  @include respond(phone) {
+    // height: 45%;
+    display: none;
   }
 }
 
@@ -46,11 +76,15 @@
   h2 {
     font-weight: 300;
   }
+  @include respond(phone) {
+    // height: 45%;
+    width: 100%;
+  }
 }
 
 .inputFields {
   margin: 15px 0;
-  font-size: 16px;
+  font-size: 1.6rem;
   padding: 10px;
   width: 250px;
   border: 1px solid rgb(255, 255, 255);
@@ -61,6 +95,14 @@
   background: #ffffff05;
   color: white;
   outline: none;
+
+  @include respond(big-desktop) {
+    font-size: 1.4rem;
+  }
+
+  @include respond(phone) {
+    width: 80%;
+  }
 }
 
 .noBullet {

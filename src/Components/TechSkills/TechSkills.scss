@@ -1,3 +1,5 @@
+@import "../../mainSass/main";
+
 .skills__container {
   display: flex;
   /* flex: 0 0 100%; */
@@ -15,6 +17,10 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+
+  @include respond(phone) {
+    min-height: 50vh;
+  }
 }
 
 .skills__subHead {

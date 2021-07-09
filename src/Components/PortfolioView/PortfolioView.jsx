@@ -1,36 +1,41 @@
 import React from "react";
 import PortfolioCard from "../PortfolioCard/PortfolioCard";
 import Title from "../Title/Title";
-import "./PortfolioView.styles.css";
+import "./PortfolioView.scss";
 import Data from "../../Data/PortfolioData";
 import { Carousel } from "react-responsive-carousel";
 
 const PortfolioView = () => {
   return (
     <section className="portfolioView" id="portfolio">
-      <Title name="Latest Projects" />
-      <div className="portfolioView__items">
-        <Carousel
-          showThumbs={false}
-          autoPlay={false}
-          stopOnHover={true}
-          infiniteLoop
-          interval={10000}
-        >
-          {Data.slice(0, 3).map((item, index) => (
-            <PortfolioCard
-              key={index}
-              name={item.name}
-              thumbnailUrl={item.thumbnailUrl}
-              description={item.description}
-              stacks={item.stacks}
-              githubRepoLink={item.githubRepoLink}
-              liveDemoLink={item.liveDemoLink}
-            />
-          ))}
-        </Carousel>
+      <div className="content-wrapper">
+        <Title name="Latest Projects" />
+        <br />
+        <br />
+        <br />
+        <div className="portfolioView__items">
+          <Carousel
+            showThumbs={false}
+            autoPlay={false}
+            stopOnHover={true}
+            infiniteLoop
+            interval={10000}
+          >
+            {Data.slice(0, 3).map((item, index) => (
+              <PortfolioCard
+                key={index}
+                name={item.name}
+                thumbnailUrl={item.thumbnailUrl}
+                description={item.description}
+                stacks={item.stacks}
+                githubRepoLink={item.githubRepoLink}
+                liveDemoLink={item.liveDemoLink}
+              />
+            ))}
+          </Carousel>
+        </div>
+        {/* <ShowMoreBtn link="/portfolio" /> */}
       </div>
-      {/* <ShowMoreBtn link="/portfolio" /> */}
     </section>
   );
 };

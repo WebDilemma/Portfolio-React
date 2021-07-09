@@ -2,12 +2,15 @@ import React from "react";
 import Planets from "../Planets/Planets";
 import "./Home.styles.css";
 import BgAnim from "../Bg-Animation/BgAnim";
+import ScrollBtn from "../ScrollBtn/ScrollBtn";
 
 const Home = () => {
   return (
     <section className="home" id="home">
-      <BgAnim />
       <Planets className="home__planets" />
+      {/* <div className="scroll-btn">
+        <ScrollBtn />
+      </div> */}
       <div className="home__headline">
         <p>Grow</p>
         <p>Like</p>

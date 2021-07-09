@@ -24,8 +24,8 @@
   span {
   /* background-color: #3494ec;
   color: #fff; */
-  color: black;
-  background-color: #e2ffc7;
+  color: rgb(255, 255, 255);
+  background-color: #056162;
 }
 
 #chat
@@ -103,11 +103,11 @@
   word-wrap: break-word;
   /* background: var(--chat-bubble-background); */
   /* background: #5c5c5c; */
-  background: #fff;
+  background: #262d31;
   font-size: 13px;
   /* color: var(--chat-text-color); */
-  color: black;
-  padding: 0.5em 0.8em;
+  color: rgb(255, 255, 255);
+  padding: 0.9rem 0.8rem;
   line-height: 1.5;
   border-radius: 6px;
   font-family: "Roboto", sans-serif;

@@ -9,11 +9,18 @@ body {
   scroll-snap-type: y mandatory;
   height: 100vh;
 }
+
+.aboutpage__wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
 .aboutpage__device {
   padding-top: 3rem;
   scroll-snap-align: start;
   scroll-snap-stop: always;
   height: auto;
+  margin-bottom: 20rem;
 }
 .aboutpage__deviceContainer {
   scroll-snap-align: start;

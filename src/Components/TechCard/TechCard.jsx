@@ -1,5 +1,5 @@
-import React from 'react';
-import './TechCard.styles.css';
+import React from "react";
+import "./TechCard.scss";
 
 const TechCard = ({ logo, name }) => {
   return (

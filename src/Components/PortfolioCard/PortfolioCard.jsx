@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "./PortfolioCard.styles.css";
+import { IoIosArrowUp } from "react-icons/io";
+import { IoIosArrowDown } from "react-icons/io";
 
 const PortfolioCard = (props) => {
   const {
@@ -25,18 +27,19 @@ const PortfolioCard = (props) => {
             alt={name}
           />
         </div>
-        <p
+        {/* <p
           className={
             showInfo ? "portfolioCard__title active" : "portfolioCard__title"
           }
         >
           {name}
-        </p>
+        </p> */}
         {showInfo && (
           <div className="portfolioCard__info">
             <div className="portfolioCard__infoContainer">
               <div className="infoContainer__left">
-                <div className="infoContainer__title">Description:</div>
+                <div className="infoContainer__title">{name}</div>
+                <br></br>
                 <div className="infoContainer__decription">{description}</div>
                 <div className="infoContainer__stackUsed">
                   <div>Stack:</div>
@@ -64,14 +67,7 @@ const PortfolioCard = (props) => {
           </div>
         )}
         <div className="showInfo__btn">
-          <i
-            className={
-              showInfo
-                ? "fas fa-chevron-circle-down"
-                : "fas fa-chevron-circle-up"
-            }
-            aria-hidden="true"
-          ></i>
+          {showInfo ? <IoIosArrowDown /> : <IoIosArrowUp />}
         </div>
       </div>
     </div>

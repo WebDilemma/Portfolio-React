@@ -5,12 +5,15 @@ import PortfolioView from "../../Components/PortfolioView/PortfolioView";
 import AboutView from "../../Components/AboutView/AboutView";
 import ContactView from "../../Components/ContactView/ContactView";
 import Footer from "../../Components/Footer/Footer";
+import BgAnim from "../../Components/Bg-Animation/BgAnim";
 
 const HomePage = () => {
   return (
     <div className="homepage">
-      <Home />
-      <PortfolioView />
+      <BgAnim style={{ zIndex: "-1" }} />
+
+      <Home style={{ zIndex: "10" }} />
+      <PortfolioView style={{ zIndex: "10" }} />
       {/* <TemplateView /> */}
       <AboutView />
       <ContactView />

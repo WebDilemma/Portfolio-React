@@ -13,10 +13,11 @@ body {
 .reachOut {
   scroll-snap-align: start;
   scroll-snap-stop: always;
+  display: none;
 }
 
 .contactpage__contactForm {
-  height: 100vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;

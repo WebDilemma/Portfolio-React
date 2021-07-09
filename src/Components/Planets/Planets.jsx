@@ -1,5 +1,5 @@
 import React from "react";
-import "./Planets.styles.css";
+import "./Planets.scss";
 
 const Planets = () => {
   return (

@@ -5,7 +5,7 @@ import Macbook from "../../Components/Macbook/Macbook";
 import OurTeam from "../../Components/OurTeam/OurTeam";
 import Title from "../../Components/Title/Title";
 import Ipad from "../../Components/iPad/Ipad";
-import "./AboutPage.styles.css";
+import "./AboutPage.scss";
 import Footer from "../../Components/Footer/Footer";
 
 const AboutPage = () => {
@@ -22,14 +22,19 @@ const AboutPage = () => {
 
   return (
     <div className="aboutpage">
-      <section className="aboutpage__device">
-        <Title name="about" />
-        <div className="aboutpage__deviceContainer">
-          {isMobile ? <IphoneX /> : <Ipad />}
-        </div>
-      </section>
-      <OurTeam />
-      <Footer />
+      <div className="aboutpage__wrapper">
+        <section className="aboutpage__device">
+          <Title name="about" />
+          <br />
+          <br />
+          <br />
+          <div className="aboutpage__deviceContainer">
+            <Ipad />
+          </div>
+        </section>
+        <OurTeam />
+        <Footer />
+      </div>
     </div>
   );
 };

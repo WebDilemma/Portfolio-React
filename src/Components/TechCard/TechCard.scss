@@ -1,3 +1,5 @@
+@import "../../mainSass/main";
+
 .techCard {
   flex: 0 0 25%;
   max-width: 25%;
@@ -15,6 +17,10 @@
 .techCard__logo {
   object-fit: contain;
   height: 60px;
+
+  @include respond(phone) {
+    height: 40px;
+  }
 }
 
 .techCard__container p {
@@ -23,14 +29,14 @@
   font-family: "Fira code";
 }
 
-@media (max-width: 1280px) {
-  .techCard__logo {
-    height: 66px;
-  }
-}
+// @media (max-width: 1280px) {
+//   .techCard__logo {
+//     height: 66px;
+//   }
+// }
 
-@media (max-width: 960px) {
-  .techCard__logo {
-    height: 50px;
-  }
-}
+// @media (max-width: 960px) {
+//   .techCard__logo {
+//     height: 50px;
+//   }
+// }

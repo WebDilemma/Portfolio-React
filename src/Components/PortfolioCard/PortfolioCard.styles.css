@@ -8,35 +8,37 @@
 }
 
 .portfolioCard__container {
-  background: rgba(255, 255, 255, 0.1);
+  background: #03080f;
   backdrop-filter: blur(80px);
-  border-radius: 1rem;
+  border-radius: 0.7rem;
   position: relative;
 }
 
 .portfolioCard__thumbnail {
-  transition: all 0.2s ease-out;
-  opacity: 0.8;
-  border-radius: 1rem;
+  /* transition: all 0.2s ease-out; */
+  opacity: 1;
+  border-radius: 0.7rem;
 }
 
 .portfolioCard__thumbnail.active {
-  transition: all 0.2s ease-in-out;
-  transform: translateY(-100%);
+  /* transition: all 0.2s ease-in-out; */
+  /* transform: translateY(-100%); */
   /* opacity: 0.01; */
 }
 
 .portfolioCard__title {
-  text-transform: capitalize;
+  text-transform: uppercase;
   position: absolute;
-  top: 0;
-  left: 0;
+  bottom: 0;
+  left: 40%;
+  color: #2e013b;
   padding: 1rem;
-  font-size: 6rem;
+  font-size: 3rem;
+  /* opacity: 0.8; */
   line-height: 6rem;
-  font-weight: 400;
+  font-weight: 600;
   transition: all 0.2s ease-in;
-  font-family: "Poppins";
+  font-family: Arial, Helvetica, sans-serif;
   text-align: left;
   /* animation: shrinkOut 0.3s; */
 }
@@ -60,6 +62,9 @@
   height: 100%;
   display: flex;
   overflow-y: scroll;
+  background-color: #03080f;
+  border-radius: 0.7rem;
+  backdrop-filter: 80%;
 }
 
 .infoContainer__left {
@@ -89,7 +94,9 @@
   /* position: relative;
   top: 0;
   left: 0; */
-  font-size: 2rem;
+  font-size: 2.5rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 400;
   /* transition: all 0.3s ease-out; */
   /* animation: 0.3s shrinkIn; */

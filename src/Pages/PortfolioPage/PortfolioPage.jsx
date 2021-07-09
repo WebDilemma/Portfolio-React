@@ -1,7 +1,7 @@
 import React from "react";
 import PortfolioCard from "../../Components/PortfolioCard/PortfolioCard";
 import Title from "../../Components/Title/Title";
-import "./PortfolioPage.styles.css";
+import "./PortfolioPage.scss";
 import Data from "../../Data/PortfolioData";
 import Footer from "../../Components/Footer/Footer";
 import TechSkills from "../../Components/TechSkills/TechSkills";
