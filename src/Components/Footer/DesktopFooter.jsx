@@ -33,9 +33,26 @@ const DesktopFooter = () => {
           <b>Social Media</b>
         </p>
         <ul>
-          <li>Insta</li>
-          <li>Twitter</li>
-          <li>LinkedIn</li>
+          <li>
+            <a
+              rel="noreferrer"
+              target="_blank"
+              href="https://github.com/WebDilemma"
+            >
+              <i className="fa fa-github-square" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.linkedin.com/">
+              <i className="fa fa-linkedin-square" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com">
+              <i className="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="mailto:abc@example.com">
+              <i className="fa fa-envelope" aria-hidden="true"></i>
+            </a>
+          </li>
         </ul>
       </div>
       <div className="footer__about">

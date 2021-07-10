@@ -50,3 +50,8 @@
   padding: 1rem 1.5rem;
   border-radius: 2rem;
 }
+
+.footer__socialMedia .fa {
+  font-size: 2rem;
+  padding: 1rem;
+}

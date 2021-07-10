@@ -19,13 +19,13 @@ const MobileFooter = () => {
           <i className="fa fa-envelope" aria-hidden="true"></i>
         </a>
       </div>
-      <div className="mobileFooter__policy">
+      {/* <div className="mobileFooter__policy">
         <p>
           <a href="/about">about</a>
         </p>
         <p>Terms & Conditon</p>
         <p>Policy</p>
-      </div>
+      </div> */}
       <div className="mobileFooter__credits">
         &#47;&#47; 2021 Web Dilemma All rights reserved
       </div>
