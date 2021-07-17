@@ -6,11 +6,13 @@ import { Route, Switch } from "react-router-dom";
 import ContactPage from "./Pages/ContactPage/ContactPage";
 import PortfolioPage from "./Pages/PortfolioPage/PortfolioPage";
 import AboutPage from "./Pages/AboutPage/AboutPage";
+import BgAnim from "./Components/Bg-Animation/BgAnim";
 
 function App() {
   return (
     <div className="app">
       <Navbar className="app__navbar" />
+      <BgAnim style={{ zIndex: "-1" }} />
       <Switch>
         <Route exact path="/">
           <HomePage className="app__homepage" />

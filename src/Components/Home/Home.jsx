@@ -1,6 +1,6 @@
 import React from "react";
 import Planets from "../Planets/Planets";
-import "./Home.styles.css";
+import "./Home.scss";
 import BgAnim from "../Bg-Animation/BgAnim";
 import ScrollBtn from "../ScrollBtn/ScrollBtn";
 

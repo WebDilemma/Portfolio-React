@@ -10,8 +10,6 @@ import BgAnim from "../../Components/Bg-Animation/BgAnim";
 const HomePage = () => {
   return (
     <div className="homepage">
-      <BgAnim style={{ zIndex: "-1" }} />
-
       <Home style={{ zIndex: "10" }} />
       <PortfolioView style={{ zIndex: "10" }} />
       {/* <TemplateView /> */}

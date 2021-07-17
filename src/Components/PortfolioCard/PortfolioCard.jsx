@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./PortfolioCard.styles.css";
+import "./PortfolioCard.scss";
 import { IoIosArrowUp } from "react-icons/io";
 import { IoIosArrowDown } from "react-icons/io";
 
@@ -42,7 +42,8 @@ const PortfolioCard = (props) => {
                 <br></br>
                 <div className="infoContainer__decription">{description}</div>
                 <div className="infoContainer__stackUsed">
-                  <div>Stack:</div>
+                  <div>Stack :</div>
+                  <br />
 
                   {stacks.map((stack) => (
                     <span key={stack} className="stackUsed__stackItem">

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./TeamMemberCard.styles.css";
+import "./TeamMemberCard.scss";
 
 const TeamMemberCard = ({
   linkedinLink,

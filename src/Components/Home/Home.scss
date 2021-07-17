@@ -1,3 +1,6 @@
+@import "../../mainSass/main";
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap");
+
 .home {
   position: relative;
   height: 100vh;
@@ -53,8 +56,8 @@
   top: 50%;
   transform: translateY(-50%);
   font-size: 9rem;
-  font-family: "Fira Code", monospace;
-  font-weight: 700;
+  font-family: $mainFont;
+  font-weight: 600;
   width: 400px;
   padding-left: 15vw;
 }

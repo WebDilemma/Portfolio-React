@@ -8,6 +8,7 @@
   overflow-x: hidden;
   align-items: center;
   display: flex;
+  margin-bottom: 3rem;
   justify-content: center;
 
   @include respond(phone) {
@@ -17,7 +18,7 @@
 
 .title p {
   /* padding: 9rem 0 4rem 18rem; */
-  font-family: "Poppins";
+  font-family: $mainFont;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import PortfolioCard from "../PortfolioCard/PortfolioCard";
 import Title from "../Title/Title";
 import "./PortfolioView.scss";
 import Data from "../../Data/PortfolioData";
+import Skeleton from "@material-ui/lab/Skeleton";
 import { Carousel } from "react-responsive-carousel";
 
 const PortfolioView = () => {

@@ -8,11 +8,16 @@ function ContactForm() {
         <div class="signupSection">
           <div class="info">
             <h2>Contact Us</h2>
-            {/* <br /> */}
+            <br />
 
             <p>Let's Create Something Useful</p>
           </div>
-          <form action="#" method="POST" class="signupForm" name="signupform">
+          <form
+            action="#"
+            method="POST"
+            className="signupForm"
+            name="signupform"
+          >
             <h2>Talk!</h2>
             <ul class="noBullet">
               <li>

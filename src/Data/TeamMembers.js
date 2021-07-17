@@ -20,7 +20,7 @@ const TeamMember = [
   {
     name: "Om Raval",
     jobTitle: "UI/UX",
-    expertise: [html5, react, figma],
+    expertise: [html5, react, figma, sql, js, css3, bootstrap],
     profilePic: om,
     bio: "Glad to have you here! I am Om Raval, a student with great interest in Web Development. Let’s connect your Business/Company with the World. People buy What they love to see. I wish to help you make a sensational website using my designing and web development skills.",
     githubLink: "https://github.com/omraval18",
