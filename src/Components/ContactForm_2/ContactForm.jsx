@@ -5,9 +5,9 @@ function ContactForm() {
   return (
     <div>
       <div className="form-wrapper">
-        <div class="signupSection">
-          <div class="info">
-            <h2>Contact Us</h2>
+        <div className="signupSection">
+          <div className="info">
+            <h2>Reach Out</h2>
             <br />
 
             <p>Let's Create Something Useful</p>
@@ -21,37 +21,31 @@ function ContactForm() {
             <h2>Talk!</h2>
             <ul class="noBullet">
               <li>
-                <label for="username"></label>
                 <input
                   type="text"
-                  class="inputFields"
+                  className="inputFields"
                   id="username"
                   name="username"
                   placeholder="Your Name"
-                  value=""
                   required
                 />
               </li>
               <li>
-                <label for="email"></label>
                 <input
                   type="email"
-                  class="inputFields"
+                  className="inputFields"
                   id="email"
                   name="email"
                   placeholder="Your Email"
-                  value=""
                   required
                 />
               </li>
               <li>
-                <label for="Message"></label>
                 <textarea
                   type="text"
-                  class="inputFields"
+                  className="inputFields"
                   name="password"
                   placeholder="Message"
-                  value=""
                   required
                 />
               </li>

@@ -2,12 +2,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap");
 @import url("http://fonts.cdnfonts.com/css/futura-lt");
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 
-$contentFont: "PT Sans", sans-serif;
-$mainFont: "Fira code", monospace;
-$subHeadingFont: "Helvetica";
+$contentFont: "IBM Plex Sans", sans-serif;
+$mainFont: "IBM Plex Mono", monospace;
+$subHeadingFont: "IBM Plex Mono", monospace;
 $h1Weight: 700;
-$h2Weight: 400;
+$h2Weight: 600;
 
 @mixin respond($breakpoint) {
   @if $breakpoint == smallPhone {

@@ -1,5 +1,6 @@
 .contactView {
   min-height: 100vh;
+  margin-bottom: 5rem;
   scroll-snap-align: start;
   scroll-snap-stop: always;
   display: flex;
@@ -34,7 +35,7 @@
     /* position: absolute; */
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 120%;
     padding: 0;
     padding-bottom: 3rem;
   }

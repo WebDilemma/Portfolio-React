@@ -1,0 +1,93 @@
+.navbar {
+  position: relative;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-right: 5rem;
+  z-index: 10;
+  transition: all ease;
+  z-index: 100;
+}
+
+.navbar__logoContainer {
+  transform: translateX(50px);
+  transform: all 0.3s ease;
+  z-index: 2;
+  position: fixed;
+  left: -120px;
+  top: 0;
+}
+
+.navbar__logoImg {
+  object-fit: contain;
+  height: 100px;
+}
+
+.navbar__nav {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  transition: all 0.3s ease;
+  top: -100vh;
+  overflow-x: hidden;
+}
+
+.navbar__nav li {
+  font-family: "Fira Code";
+  text-transform: uppercase;
+  padding: 1.5rem 0;
+  transition: all 0.3s ease;
+  font-weight: 400;
+  font-size: 6rem;
+  background: linear-gradient(to right, rgb(176, 172, 224), rgb(238, 224, 251));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.navbar__nav.active li:hover {
+  background: linear-gradient(to right, #0db6f2, #032f72);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.navbar__nav.active {
+  background-color: rgb(0, 0, 0);
+  backdrop-filter: blur(80px);
+  top: 0;
+  z-index: 1;
+  height: 100vh;
+  animation: 2s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-left both;
+}
+
+.navbar__burgerBtn {
+  display: block;
+  position: fixed;
+  transition: all 0.3s ease;
+  top: 0;
+  right: 0;
+  margin: 30px;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 2;
+}
+
+@media (max-width: 650px) {
+  .navbar__logoImg {
+    height: 80px;
+  }
+}
+
+@keyframes wipe-in-left {
+  from {
+    clip-path: inset(0 0 0 100%);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}

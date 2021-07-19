@@ -6,7 +6,7 @@ import "./ContactView.styles.css";
 const ContactView = () => {
   return (
     <section className="contactView">
-      {/* <Title name="contact" /> */}
+      <Title name="contact" />
       <ContactForm />
       {/* <div className="contactView__email">
         <p>contact@webdilemma.com</p>
