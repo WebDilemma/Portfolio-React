@@ -1,11 +1,13 @@
+@import "../../mainSass/main";
+
 .mobileFooter {
   background-color: #000;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: "Roboto";
-  margin-top: 4rem;
+  font-family: $mainFont;
+  margin-top: 5rem;
   padding: 1rem 0 4rem 0;
   scroll-snap-align: start;
   scroll-snap-stop: always;
@@ -13,11 +15,16 @@
 
 .mobileFooter__follow {
   text-transform: uppercase;
+  font-family: $contentFont;
+  font-weight: 500;
+  margin-top: 1rem;
+  opacity: 0.8;
 }
 
 .mobileFooter__socialLinks .fa {
-  margin: 1rem 1rem;
-  font-size: 4rem;
+  margin: 1.5rem 1rem;
+  font-size: 2rem;
+  opacity: 0.9;
 }
 
 .mobileFooter__policy {
@@ -28,10 +35,14 @@
   margin: 0.5rem;
   margin-top: 0;
   text-transform: capitalize;
-  font-weight: 300;
+  font-weight: 500;
+  opacity: 0.8;
 }
 
 .mobileFooter__credits {
-  font-size: 1rem;
+  font-size: 1.4rem;
   margin: 5px 0;
+  font-weight: 400;
+  margin-top: 2rem;
+  opacity: 0.8;
 }

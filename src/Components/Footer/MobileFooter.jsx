@@ -1,5 +1,5 @@
 import React from "react";
-import "./MobileFooter.styles.css";
+import "./MobileFooter.scss";
 
 const MobileFooter = () => {
   return (
