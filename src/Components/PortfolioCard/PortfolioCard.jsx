@@ -27,40 +27,34 @@ const PortfolioCard = (props) => {
             alt={name}
           />
         </div>
-        {/* <p
-          className={
-            showInfo ? "portfolioCard__title active" : "portfolioCard__title"
-          }
-        >
-          {name}
-        </p> */}
         {showInfo && (
           <div className="portfolioCard__info">
             <div className="portfolioCard__infoContainer">
-              <div className="infoContainer__left">
-                <div className="infoContainer__title">{name}</div>
-                <br></br>
-                <div className="infoContainer__decription">{description}</div>
-                <div className="infoContainer__stackUsed">
-                  <div>Stack :</div>
-                  <br />
-
-                  {stacks.map((stack) => (
-                    <span key={stack} className="stackUsed__stackItem">
-                      {stack}
-                    </span>
-                  ))}
-                </div>
+              <div className="infoContainer__title">{name}</div>
+              <div className="infoContainer__stackUsed">
+                Powered with&nbsp; <span>&#123;</span>
+                {stacks.map((stack) => (
+                  <img
+                    alt="stack"
+                    key={stack}
+                    src={stack}
+                    className="stackUsed__stackItem"
+                  />
+                ))}
+                <span>&#125;</span>
               </div>
-              <div className="infoContainer__right">
+              <div className="infoContainer__buttonLinks">
                 {githubRepoLink && (
-                  <a href={githubRepoLink}>
-                    <i className="fa fa-github" aria-hidden="true"></i>
+                  <a
+                    href={githubRepoLink}
+                    className="infoContainer__buttonLink"
+                  >
+                    <i className="fa fa-github" aria-hidden="true"></i> Repo
                   </a>
                 )}
                 {liveDemoLink && (
-                  <a href={liveDemoLink}>
-                    <i className="fa fa-globe" aria-hidden="true"></i>
+                  <a href={liveDemoLink} className="infoContainer__buttonLink">
+                    <i className="fa fa-globe" aria-hidden="true"></i> Visit
                   </a>
                 )}
               </div>
