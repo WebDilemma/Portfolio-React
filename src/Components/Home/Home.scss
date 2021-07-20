@@ -4,8 +4,8 @@
 .home {
   position: relative;
   height: 100vh;
-  scroll-snap-align: start;
   scroll-snap-stop: always;
+  scroll-snap-align: start;
   -webkit-animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
@@ -19,6 +19,10 @@
   align-items: center;
   top: -12%;
   justify-content: center;
+
+  @include respond(phone) {
+    top: -15%;
+  }
 }
 
 @-webkit-keyframes slide-in-top {
