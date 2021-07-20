@@ -5,23 +5,19 @@
   position: relative;
   height: 100vh;
   scroll-snap-align: start;
-
   scroll-snap-stop: always;
-  /* background-image: url(../../Assets/bg.svg); */
-  /* background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center; */
   -webkit-animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .scroll-btn {
-  width: 100%;
   z-index: 1;
-  position: absolute;
+  position: relative;
   display: flex;
+  width: 100%;
   flex-direction: column;
   align-items: center;
+  top: -12%;
   justify-content: center;
 }
 

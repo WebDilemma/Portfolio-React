@@ -5,7 +5,7 @@ function ScrollBtn() {
   return (
     <div className="scroll-btn-wrapper">
       <div class="mouse"></div>
-      {/* <p>Scroll</p> */}
+      <p>Scroll</p>
     </div>
   );
 }

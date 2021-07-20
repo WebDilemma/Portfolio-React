@@ -8,9 +8,9 @@ const Home = () => {
   return (
     <section className="home" id="home">
       <Planets className="home__planets" />
-      {/* <div className="scroll-btn">
+      <div className="scroll-btn">
         <ScrollBtn />
-      </div> */}
+      </div>
       <div className="home__headline">
         <p>Grow</p>
         <p>Like</p>
